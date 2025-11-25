@@ -1,0 +1,154 @@
+
+    <!-- HEADER -->
+<header class="header" role="banner">
+  <div class="nav-container">
+    <a href="#" class="logo-area" aria-label="Ezypayment home">
+      <!-- dummy logo (replace with real logo) -->
+      <img src="/mnt/data/Screenshot 2025-11-20 153807.png" class="logo-img" alt="EZYPAYMENT logo"/>
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="#" class="nav-item">Home</a>
+
+      <div class="dropdown" id="productsDropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          Products <span class="caret">▾</span>
+        </button>
+
+        <div class="dropdown-content" role="menu" aria-hidden="true">
+          <div class="cards-grid">
+            <!-- Card 1 -->
+            <a href="/payment-gateway" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="/assets/images/credit-cartsIcon.png" alt="pg icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Payment Gateway</strong>
+                <p>Accept all payments via any method with seamless API integration.</p>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/fees" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/rupeeicon.png" alt="fees icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Fees</strong>
+                <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="/payout" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/payout.png" alt="payout icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Payout</strong>
+                <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+              </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="/pos" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/credit-card.png" alt="pos icon"/>
+              </div>
+              <div class="card-text">
+                <strong>POS</strong>
+                <p>Accept all in-person payments from all digital methods effortlessly.</p>
+              </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="/smart-billing" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/bill.png" alt="sb icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Smart Billing</strong>
+                <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+              </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="/teller" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/teller.png" alt="teller icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Teller</strong>
+                <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
+              </div>
+            </a>
+          </div> <!-- .cards-grid -->
+        </div> <!-- .dropdown-content -->
+      </div> <!-- .dropdown -->
+
+      <a href="#" class="nav-item">Pricing</a>
+      <a href="#" class="nav-item">Services</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="#" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a class="login-btn" href="/login">Login →</a>
+
+      <!-- hamburger for small screens -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<script>
+(function () {
+  const drop = document.getElementById('productsDropdown');
+  const dropBtn = drop.querySelector('.dropbtn');
+  const dropContent = drop.querySelector('.dropdown-content');
+
+  dropBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = drop.classList.toggle('open');
+    dropBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    dropContent.setAttribute('aria-hidden', open ? 'false' : 'true');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!drop.contains(e.target)) {
+      drop.classList.remove('open');
+      dropBtn.setAttribute('aria-expanded', 'false');
+      dropContent.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  document.addEventListener('keydown', (ev) => {
+    if (ev.key === 'Escape') {
+      drop.classList.remove('open');
+      dropBtn.setAttribute('aria-expanded', 'false');
+      dropContent.setAttribute('aria-hidden', 'true');
+    }
+  });
+
+  const ham = document.getElementById('hamburger');
+  const nav = document.querySelector('.nav-links');
+
+  ham.addEventListener('click', () => {
+    const open = nav.classList.toggle('mobile-open');
+    ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+    drop.classList.remove('open');
+    drop.querySelector('.dropdown-content').setAttribute('aria-hidden', 'true');
+  });
+
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (nav.classList.contains('mobile-open')) {
+        nav.classList.remove('mobile-open');
+        ham.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+})();
+</script>

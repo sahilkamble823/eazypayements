@@ -1,1533 +1,272 @@
 <!DOCTYPE html>
-<html lang="en" data-astro-cid-37fxchfa>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Wonderpay – Simplifying Online Payments for Indian Businesses</title>
-    <meta
-      name="description"
-      content="Wonderpay offers the most reliable payment gateway in India. Easy integration, instant settlement, and support for UPI, cards, EMI &#38; more."
-    />
-    <link rel="canonical" href="https://wonderpaytec.com/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezypayment</title>
+    <link rel="stylesheet" href="/eazypayements/assets/style.css">
+</head>
+<body>
 
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="Wonderpay – Simplifying Online Payments for Indian Businesses"
-    />
-    <meta
-      property="og:description"
-      content="Wonderpay offers the most reliable payment gateway in India. Easy integration, instant settlement, and support for UPI, cards, EMI &#38; more."
-    />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://wonderpaytec.com/" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Wonderpay – Simplifying Online Payments for Indian Businesses"
-    />
-    <meta
-      name="twitter:description"
-      content="Wonderpay offers the most reliable payment gateway in India. Easy integration, instant settlement, and support for UPI, cards, EMI &#38; more."
-    />
-    <!-- 	<ClientRouter /> -->
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-EYLGHG06W8"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    <!-- HEADER -->
+<header class="header" role="banner">
+  <div class="nav-container">
+    <a href="#" class="logo-area" aria-label="Ezypayment home">
+      <!-- dummy logo (replace with real logo) -->
+      <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo"/>
+    </a>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="#" class="nav-item">Home</a>
 
-      gtag("config", "G-EYLGHG06W8");
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Wonderpay Technologies Private Limited",
-        "alternateName": "Wonderpay",
-        "url": "https://wonderpaytec.com/",
-        "logo": "https://wonderpaytec.com/assets/website-assets/common-images/logo/logo-black.png",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "1800-570-7737",
-          "contactType": "Customer Service",
-          "email": "onboarding@wonderpaytec.com",
-          "areaServed": "IN",
-          "availableLanguage": "en"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "402-404, 4th floor, Jagdish Enclave, Hawa Sadak, Civil Lines",
-          "addressLocality": "Jaipur",
-          "addressRegion": "Rajasthan",
-          "postalCode": "302006",
-          "addressCountry": "IN"
-        },
-        "description": "Wonderpay is a fintech company in India that provides a robust, scalable infrastructure for businesses. We offer a comprehensive suite of payment solutions including payment gateways, payouts, POS, smart billing, and virtual accounts to simplify and automate online transactions.",
-        "sameAs": [
-          "https://in.linkedin.com/company/wonderpay-technologies-pvt-ltd"
-        ]
-      }
-    </script>
-    <link rel="stylesheet" href="/assets/style5.css" />
-    <style>
-      .banner-img[data-astro-cid-j7pv25f6] {
-        will-change: transform;
-        transition: transform 0.05s linear;
-      }
-    </style>
-    <link rel="stylesheet" href="/assets/style.css" />
-    <style>
-      @charset "UTF-8";
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      <div class="dropdown" id="productsDropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          Products <span class="caret">▾</span>
+        </button>
 
-      .cards-container {
-        height: 100%;
-        position: relative;
-      }
-
-      .card-wrapper {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-        height: 500px;
-        margin: 0 auto;
-        max-width: 1224px;
-        z-index: 99999;
-      }
-
-      .process-card {
-        width: 100%;
-        height: 100%;
-        background: #f6f4ff;
-        border-radius: 24px;
-        position: absolute;
-        overflow: hidden;
-        transform-origin: center center;
-      }
-
-      .card-content {
-        height: 100%;
-        display: flex;
-        align-items: center;
-      }
-
-      .left-content {
-        flex: 1;
-        padding: 60px;
-        background: linear-gradient(260deg, #fff, #dad0ff);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .right-gif {
-        width: 400px;
-        height: 100%;
-        background: linear-gradient(91deg, #fff, #dad0ff);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .step-number {
-        width: 80px;
-        height: 80px;
-        background: linear-gradient(135deg, #5a469c, #2f2164);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-size: 32px;
-        font-weight: 700;
-        margin-bottom: 30px;
-        box-shadow: 0 10px 30px #5a469c66;
-        margin-top: 20px;
-      }
-
-      .step-title {
-        font-size: 48px;
-        font-weight: 700;
-        color: #2f2164;
-        margin-bottom: 20px;
-        line-height: 1.2;
-      }
-
-      .step-description {
-        font-size: 18px;
-        line-height: 1.6;
-        margin-bottom: 30px;
-      }
-
-      .step-features {
-        list-style: none;
-        padding: 0;
-      }
-
-      .step-features li {
-        font-weight: 500;
-        position: relative;
-        padding: 8px 0 8px 30px;
-      }
-
-      .step-features li:before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #5a469c;
-        font-weight: 700;
-        font-size: 18px;
-      }
-
-      .gif-placeholder {
-        width: 300px;
-        height: 300px;
-        background: #ffffff1a;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        backdrop-filter: blur(10px);
-        border: 2px solid rgba(255, 255, 255, 0.2);
-      }
-
-      .gif-icon {
-        font-size: 120px;
-        color: #fffc;
-      }
-
-      .floating-elements {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        pointer-events: none;
-      }
-
-      .floating-circle {
-        position: absolute;
-        border-radius: 50%;
-        background: #ffffff1a;
-      }
-
-      .circle-1 {
-        width: 60px;
-        height: 60px;
-        top: 10%;
-        right: 15%;
-      }
-
-      .circle-2 {
-        width: 40px;
-        height: 40px;
-        top: 70%;
-        right: 25%;
-      }
-
-      .circle-3 {
-        width: 80px;
-        height: 80px;
-        top: 40%;
-        right: 8%;
-      }
-
-      @media (max-width: 1400px) {
-        .process-card {
-          width: 95vw;
-          max-width: 1224px;
-        }
-        .card-wrapper {
-          max-width: 95vw;
-        }
-        .cards-container {
-          height: 100vh;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .card-content {
-          flex-direction: column;
-        }
-        .right-gif {
-          width: 100%;
-          height: 200px;
-        }
-        .left-content {
-          padding: 40px 30px;
-        }
-        .step-title {
-          font-size: 32px;
-        }
-        .process-card {
-          height: auto;
-          min-height: 440px;
-        }
-      }
-
-      .keen-slider:not([data-keen-slider-disabled]) {
-        -webkit-touch-callout: none;
-        -webkit-tap-highlight-color: transparent;
-        align-content: flex-start;
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        touch-action: pan-y;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -khtml-user-select: none;
-        width: 100%;
-      }
-
-      .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide {
-        min-height: 100%;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-      }
-
-      .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
-        flex-direction: row-reverse;
-      }
-
-      .keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v] {
-        flex-wrap: wrap;
-      }
-    </style>
-  </head>
-
-  <body data-astro-cid-37fxchfa>
-    <style>
-      astro-island,
-      astro-slot,
-      astro-static-slot {
-        display: contents;
-      }
-    </style>
-    <script>
-      (() => {
-        var e = async (t) => {
-          await (
-            await t()
-          )();
-        };
-        (self.Astro || (self.Astro = {})).only = e;
-        window.dispatchEvent(new Event("astro:only"));
-      })();
-    </script>
-    <script>
-      (() => {
-        var A = Object.defineProperty;
-        var g = (i, o, a) =>
-          o in i
-            ? A(i, o, {
-                enumerable: !0,
-                configurable: !0,
-                writable: !0,
-                value: a,
-              })
-            : (i[o] = a);
-        var d = (i, o, a) => g(i, typeof o != "symbol" ? o + "" : o, a);
-        {
-          let i = {
-              0: (t) => m(t),
-              1: (t) => a(t),
-              2: (t) => new RegExp(t),
-              3: (t) => new Date(t),
-              4: (t) => new Map(a(t)),
-              5: (t) => new Set(a(t)),
-              6: (t) => BigInt(t),
-              7: (t) => new URL(t),
-              8: (t) => new Uint8Array(t),
-              9: (t) => new Uint16Array(t),
-              10: (t) => new Uint32Array(t),
-              11: (t) => (1 / 0) * t,
-            },
-            o = (t) => {
-              let [l, e] = t;
-              return l in i ? i[l](e) : void 0;
-            },
-            a = (t) => t.map(o),
-            m = (t) =>
-              typeof t != "object" || t === null
-                ? t
-                : Object.fromEntries(
-                    Object.entries(t).map(([l, e]) => [l, o(e)])
-                  );
-          class y extends HTMLElement {
-            constructor() {
-              super(...arguments);
-              d(this, "Component");
-              d(this, "hydrator");
-              d(this, "hydrate", async () => {
-                var b;
-                if (!this.hydrator || !this.isConnected) return;
-                let e =
-                  (b = this.parentElement) == null
-                    ? void 0
-                    : b.closest("astro-island[ssr]");
-                if (e) {
-                  e.addEventListener("astro:hydrate", this.hydrate, {
-                    once: !0,
-                  });
-                  return;
-                }
-                let c = this.querySelectorAll("astro-slot"),
-                  n = {},
-                  h = this.querySelectorAll("template[data-astro-template]");
-                for (let r of h) {
-                  let s = r.closest(this.tagName);
-                  s != null &&
-                    s.isSameNode(this) &&
-                    ((n[r.getAttribute("data-astro-template") || "default"] =
-                      r.innerHTML),
-                    r.remove());
-                }
-                for (let r of c) {
-                  let s = r.closest(this.tagName);
-                  s != null &&
-                    s.isSameNode(this) &&
-                    (n[r.getAttribute("name") || "default"] = r.innerHTML);
-                }
-                let p;
-                try {
-                  p = this.hasAttribute("props")
-                    ? m(JSON.parse(this.getAttribute("props")))
-                    : {};
-                } catch (r) {
-                  let s = this.getAttribute("component-url") || "<unknown>",
-                    v = this.getAttribute("component-export");
-                  throw (
-                    (v && (s += ` (export ${v})`),
-                    console.error(
-                      `[hydrate] Error parsing props for component ${s}`,
-                      this.getAttribute("props"),
-                      r
-                    ),
-                    r)
-                  );
-                }
-                let u;
-                await this.hydrator(this)(this.Component, p, n, {
-                  client: this.getAttribute("client"),
-                }),
-                  this.removeAttribute("ssr"),
-                  this.dispatchEvent(new CustomEvent("astro:hydrate"));
-              });
-              d(this, "unmount", () => {
-                this.isConnected ||
-                  this.dispatchEvent(new CustomEvent("astro:unmount"));
-              });
-            }
-            disconnectedCallback() {
-              document.removeEventListener("astro:after-swap", this.unmount),
-                document.addEventListener("astro:after-swap", this.unmount, {
-                  once: !0,
-                });
-            }
-            connectedCallback() {
-              if (
-                !this.hasAttribute("await-children") ||
-                document.readyState === "interactive" ||
-                document.readyState === "complete"
-              )
-                this.childrenConnectedCallback();
-              else {
-                let e = () => {
-                    document.removeEventListener("DOMContentLoaded", e),
-                      c.disconnect(),
-                      this.childrenConnectedCallback();
-                  },
-                  c = new MutationObserver(() => {
-                    var n;
-                    ((n = this.lastChild) == null ? void 0 : n.nodeType) ===
-                      Node.COMMENT_NODE &&
-                      this.lastChild.nodeValue === "astro:end" &&
-                      (this.lastChild.remove(), e());
-                  });
-                c.observe(this, {
-                  childList: !0,
-                }),
-                  document.addEventListener("DOMContentLoaded", e);
-              }
-            }
-            async childrenConnectedCallback() {
-              let e = this.getAttribute("before-hydration-url");
-              e && (await import(e)), this.start();
-            }
-            async start() {
-              let e = JSON.parse(this.getAttribute("opts")),
-                c = this.getAttribute("client");
-              if (Astro[c] === void 0) {
-                window.addEventListener(`astro:${c}`, () => this.start(), {
-                  once: !0,
-                });
-                return;
-              }
-              try {
-                await Astro[c](
-                  async () => {
-                    let n = this.getAttribute("renderer-url"),
-                      [h, { default: p }] = await Promise.all([
-                        import(this.getAttribute("component-url")),
-                        n ? import(n) : () => () => {},
-                      ]),
-                      u = this.getAttribute("component-export") || "default";
-                    if (!u.includes(".")) this.Component = h[u];
-                    else {
-                      this.Component = h;
-                      for (let f of u.split("."))
-                        this.Component = this.Component[f];
-                    }
-                    return (this.hydrator = p), this.hydrate;
-                  },
-                  e,
-                  this
-                );
-              } catch (n) {
-                console.error(
-                  `[astro-island] Error hydrating ${this.getAttribute(
-                    "component-url"
-                  )}`,
-                  n
-                );
-              }
-            }
-            attributeChangedCallback() {
-              this.hydrate();
-            }
-          }
-          d(y, "observedAttributes", ["props"]),
-            customElements.get("astro-island") ||
-              customElements.define("astro-island", y);
-        }
-      })();
-    </script>
-    <astro-island
-      uid="8ugCd"
-      component-url="/_astro/Header.C_v3cU35.js"
-      component-export="default"
-      renderer-url="/_astro/client.DVxemvf8.js"
-      props='{"data-astro-cid-j7pv25f6":[0,true]}'
-      ssr
-      client="only"
-      opts='{"name":"Header","value":"react"}'
-    ></astro-island>
-    <div id="smooth-wrapper" data-astro-cid-j7pv25f6>
-      <div id="smooth-content" data-astro-cid-j7pv25f6>
-        <div class="web-contain" data-astro-cid-j7pv25f6>
-          <!-- Content from home.component.html will go here, broken into smaller components -->
-          <!-- Banner Section -->
-          <section id="move-top" data-astro-cid-j7pv25f6>
-            <div class="banner" data-astro-cid-j7pv25f6>
-              <div class="container" data-astro-cid-j7pv25f6>
-                <div class="row" data-astro-cid-j7pv25f6>
-                  <div
-                    class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 banner_left"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <!-- <p class="before-text mb-0 mt-5">Scalable Payments Platform + Scaling Economy =</p> -->
-                    <h1 class="display-4" data-astro-cid-j7pv25f6>
-                      Empowering Digital Payments to Fuel India’s
-                      <span class="gradient-text" data-astro-cid-j7pv25f6
-                        >Economic Growth</span
-                      >
-                    </h1>
-                    <p data-astro-cid-j7pv25f6>
-                      Leverage fintech’s evolving technology, grow your business
-                      while making all your payments secure and straightforward,
-                      with a unified payment platform, whether you operate
-                      online or in-store.
-                    </p>
-                    <div class="header-btns mt-4" data-astro-cid-j7pv25f6>
-                      <a
-                        type="button"
-                        class="btn btn-primary py-3 px-4 text-white"
-                        href="https://merchant.wonderpaytec.com/merchant/auth/signup"
-                        data-astro-cid-j7pv25f6
-                        ><img
-                          src="/assets/website-assets/common-images/contact-us-btn-icon.svg"
-                          alt=""
-                          data-astro-cid-j7pv25f6
-                        />
-                        &nbsp;Sign up now</a
-                      >
-                    </div>
-                  </div>
-                  <div
-                    class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 banner_right d-none d-lg-block"
-                    data-aos="fade-up"
-                    data-aos-duration="600"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img.png"
-                      class="banner-img img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img-icon-1.svg"
-                      class="banner-img-icon-1 img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img-icon-2.svg"
-                      class="banner-img-icon-2 img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                  </div>
-                  <div
-                    class="col-md-6 col-lg-6 col-xl-6 col-xxl-6 banner_right d-block d-lg-none"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img.png"
-                      class="img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img-icon-1.svg"
-                      class="banner-img-icon-1 img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                    <img
-                      src="/assets/website-assets/home-page/banner/banner-img-icon-2.svg"
-                      class="banner-img-icon-2 img-fluid"
-                      data-aos="fade-up"
-                      data-aos-duration="600"
-                      data-astro-cid-j7pv25f6
-                    />
-                  </div>
-                </div>
+        <div class="dropdown-content" role="menu" aria-hidden="true">
+          <div class="cards-grid">
+            <!-- Card 1 -->
+            <a href="/payment-gateway" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/credit-cartsIcon.png" alt="pg icon"/>
               </div>
-            </div>
-          </section>
-          <!-- LOGO SECTION -->
-          <section id="logo-section" data-astro-cid-j7pv25f6>
-            <img
-              src="/assets/website-assets/home-page/banner/circled-arrow.svg"
-              class="circled-arrow"
-              alt=""
-              loading="lazy"
-              decoding="async"
-              data-astro-cid-j7pv25f6
-            />
-            <div class="container" data-astro-cid-j7pv25f6>
-              <div class="row" data-astro-cid-j7pv25f6>
-                <div
-                  class="col-md-12 text-center"
-                  data-aos="fade-up"
-                  data-aos-duration="600"
-                  data-astro-cid-j7pv25f6
-                >
-                  <h3 class="mb-5 display-6" data-astro-cid-j7pv25f6>
-                    Trusted by Leading Brands<br data-astro-cid-j7pv25f6 />
-                    <span class="gradient-text" data-astro-cid-j7pv25f6
-                      >Chosen for Reliability</span
-                    >
-                  </h3>
-                </div>
-                <div
-                  class="col-md-9 overflow-hidden position-relative mx-auto mt-3"
-                  data-astro-cid-j7pv25f6
-                >
-                  <div class="scroll-wrapper" data-astro-cid-j7pv25f6>
-                    <div
-                      class="logo-track d-flex align-items-center"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo1.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo2.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo3.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo4.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo5.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo6.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo7.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                      <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6>
-                        <img
-                          src="/assets/website-assets/common-images/logo/logo9.png"
-                          alt="Logo 1"
-                          class="logo-img"
-                          loading="lazy"
-                          decoding="async"
-                          data-astro-cid-j7pv25f6
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="card-text">
+                <strong>Payment Gateway</strong>
+                <p>Accept all payments via any method with seamless API integration.</p>
               </div>
-            </div>
-          </section>
-          <!-- <WpayShowcase client:only="react"/> -->
-          <astro-island
-            uid="2cKdL4"
-            component-url="/_astro/Stack.D9ybIrvR.js"
-            component-export="default"
-            renderer-url="/_astro/client.DVxemvf8.js"
-            props='{"data-astro-cid-j7pv25f6":[0,true]}'
-            ssr
-            client="only"
-            opts='{"name":"StackedCards","value":"react"}'
-          ></astro-island>
-          <!-- SECTION-2 SM(FOR MOBILE DEVICE) -->
-          <div
-            class="scroll-wrapper d-block d-xxl-none"
-            data-astro-cid-j7pv25f6
-          >
-            <section class="payment-step" data-astro-cid-j7pv25f6>
-              <div class="container" data-astro-cid-j7pv25f6>
-                <div class="row" data-astro-cid-j7pv25f6>
-                  <!-- LEFT COLUMN -->
-                  <!--  <div class="col-lg-6">
-                  <div class="section-head-container">
-                    <h5 class="section-small-head">Animation Process</h5>
-                    <h2 class="section-head display-4">
-                      <span> Bring More </span> Out of <br> WPay
-                    </h2>
-                    <p>A unified platform to accelerate your business growth. It simplifies and automates payments; leverage Wonderpay’s comprehensive dashboard anytime, anywhere, and bring more out of it. </p>
-                  </div>
-                </div> -->
-                  <div class="col-lg-6" data-astro-cid-j7pv25f6>
-                    <div data-astro-cid-j7pv25f6>
-                      <div class="cardd" data-astro-cid-j7pv25f6>
-                        <div class="d-flex gap-2" data-astro-cid-j7pv25f6>
-                          <div class="num-container" data-astro-cid-j7pv25f6>
-                            1
-                          </div>
-                          <div data-astro-cid-j7pv25f6>
-                            <h4 data-astro-cid-j7pv25f6>Get Registered</h4>
-                            <p class="fs-6" data-astro-cid-j7pv25f6>
-                              Fill out all your business details easily, while
-                              being backed by strong security.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cardd" data-astro-cid-j7pv25f6>
-                        <div class="d-flex gap-2" data-astro-cid-j7pv25f6>
-                          <div class="num-container" data-astro-cid-j7pv25f6>
-                            2
-                          </div>
-                          <div data-astro-cid-j7pv25f6>
-                            <h4 data-astro-cid-j7pv25f6>Verify Your KYC</h4>
-                            <p class="fs-6" data-astro-cid-j7pv25f6>
-                              Be authenticated. Be Secure. Improve your business
-                              cash flow.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="cardd" data-astro-cid-j7pv25f6>
-                        <div class="d-flex gap-2" data-astro-cid-j7pv25f6>
-                          <div class="num-container" data-astro-cid-j7pv25f6>
-                            3
-                          </div>
-                          <div data-astro-cid-j7pv25f6>
-                            <h4 data-astro-cid-j7pv25f6>Integrate API</h4>
-                            <p class="fs-6" data-astro-cid-j7pv25f6>
-                              Accept all your payments from any channel with the
-                              integration in your app or website.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/fees" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/rupeeicon.png" alt="fees icon"/>
               </div>
-            </section>
-          </div>
-          <!-- SECTION-3 -->
-          <section id="stand-out-section" data-astro-cid-j7pv25f6>
-            <div class="container" data-astro-cid-j7pv25f6>
-              <div class="row" data-astro-cid-j7pv25f6>
-                <div class="col-md-6" data-astro-cid-j7pv25f6>
-                  <h2 class="fs-4" data-astro-cid-j7pv25f6>
-                    Built for Speed. Designed for Scale.
-                  </h2>
-                  <h2 data-astro-cid-j7pv25f6>
-                    <span class="gradient-text" data-astro-cid-j7pv25f6
-                      >Backed by Compliance.
-                    </span>
-                  </h2>
-                </div>
-                <div
-                  class="col-md-6 align-content-center"
-                  data-astro-cid-j7pv25f6
-                >
-                  <p class="fs-5" data-astro-cid-j7pv25f6>
-                    Wonderpay fuels your business growth in the booming economy
-                    with its #1 powerful financial technology. Get a unified
-                    dashboard and manage your business journey with ease,
-                    visualizing everything in one place.
-                  </p>
-                </div>
+              <div class="card-text">
+                <strong>Fees</strong>
+                <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
               </div>
-              <div class="row g-4 pt-4" data-astro-cid-j7pv25f6>
-                <!-- Card 1 -->
-                <div class="col-md-4" data-astro-cid-j7pv25f6>
-                  <div class="feature-card text-center" data-astro-cid-j7pv25f6>
-                    <h5 class="fw-bold mt-3" data-astro-cid-j7pv25f6>
-                      Instant
-                      <span class="gradient-text" data-astro-cid-j7pv25f6
-                        >Settlements</span
-                      >
-                    </h5>
-                    <p class="text-muted mb-3" data-astro-cid-j7pv25f6>
-                      Disburse your funds for all purposes within minutes. It
-                      will help your organization establish its market presence
-                      and foster strong relationships with its target customers.
-                    </p>
-                    <img
-                      src="/assets/website-assets/home-page/section-3/Instant-Settlement.png"
-                      alt="Instant Settlement"
-                      class="img-fluid feature-icon"
-                      loading="lazy"
-                      decoding="async"
-                      data-astro-cid-j7pv25f6
-                    />
-                  </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4" data-astro-cid-j7pv25f6>
-                  <div class="feature-card text-center" data-astro-cid-j7pv25f6>
-                    <img
-                      src="/assets/website-assets/home-page/section-3/Upi-Collection.svg"
-                      alt="UPI Collection"
-                      class="img-fluid feature-icon"
-                      loading="lazy"
-                      decoding="async"
-                      data-astro-cid-j7pv25f6
-                    />
-                    <h5 class="fw-bold mt-3" data-astro-cid-j7pv25f6>
-                      UPI
-                      <span class="gradient-text" data-astro-cid-j7pv25f6>
-                        Collections
-                      </span>
-                    </h5>
-                    <p class="text-muted" data-astro-cid-j7pv25f6>
-                      Experience seamless transactions and improve your business
-                      cash flow with instant payments and inclusive features.
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4" data-astro-cid-j7pv25f6>
-                  <div class="feature-card text-center" data-astro-cid-j7pv25f6>
-                    <h5 class="fw-bold" data-astro-cid-j7pv25f6>
-                      <span class="gradient-text" data-astro-cid-j7pv25f6
-                        >Open Instant
-                      </span>
-                      Virtual Account
-                    </h5>
-                    <p class="text-muted mt-3" data-astro-cid-j7pv25f6>
-                      Be organized and build a loyal customer base while having
-                      GST-compliant invoicing, multi-entity billing, collecting
-                      payments in your virtual account with real-time
-                      reconciliation, and also accessing invoice financing via
-                      TReDS.
-                    </p>
-                    <img
-                      src="/assets/website-assets/home-page/section-3/Virtual-Account.png"
-                      alt="Virtual Account Solution"
-                      class="img-fluid feature-icon"
-                      loading="lazy"
-                      decoding="async"
-                      data-astro-cid-j7pv25f6
-                    />
-                  </div>
-                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="/payout" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/payout.png" alt="payout icon"/>
               </div>
-              <div class="row g-4 pt-4 d-none" data-astro-cid-j7pv25f6>
-                <!-- Card 1 -->
-                <div class="col-md-6" data-astro-cid-j7pv25f6>
-                  <div class="feature-card text-center" data-astro-cid-j7pv25f6>
-                    <!--  <img src="/assets/website-assets/img/Competitive pricing.svg"
-                    alt="UPI Collection" class="img-fluid feature-icon"> -->
-                    <h5 class="fw-bold mt-3" data-astro-cid-j7pv25f6>
-                      <span class="gradient-text" data-astro-cid-j7pv25f6
-                        >Competitive
-                      </span>
-                      Pricing
-                    </h5>
-                    <p class="text-muted" data-astro-cid-j7pv25f6>
-                      Get enterprise-grade features without the enterprise-level
-                      cost. Wonderpay offers transparent, low-fee pricing
-                      designed to scale with your business—no hidden charges, no
-                      surprise
-                    </p>
-                  </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-6" data-astro-cid-j7pv25f6>
-                  <div class="feature-card text-center" data-astro-cid-j7pv25f6>
-                    <h5 class="fw-bold mt-3" data-astro-cid-j7pv25f6>
-                      Flexible PayIn
-                      <span class="gradient-text" data-astro-cid-j7pv25f6
-                        >Solutions</span
-                      >
-                    </h5>
-                    <p class="text-muted mb-3" data-astro-cid-j7pv25f6>
-                      Collect payments anytime, anywhere—online or offline. From
-                      UPI, cards, and payment links to POS and recurring
-                      billing, Wonderpay’s PayIn suite helps you simplify
-                      collections and boost cash flow effortlessly.
-                    </p>
-                    <!-- <img src="/assets/website-assets/img/Payin Solution.svg"
-                    alt="Instant Settlement" class="img-fluid feature-icon"> -->
-                  </div>
-                </div>
+              <div class="card-text">
+                <strong>Payout</strong>
+                <p>Schedule auto payouts to anyone for any purpose at any time.</p>
               </div>
-            </div>
-          </section>
-          <!-- SECTION-4 -->
-          <section
-            class="developer-section py-5"
-            data-aos="zoom-in"
-            data-aos-duration="600"
-            data-astro-cid-j7pv25f6
-          >
-            <div class="container" data-astro-cid-j7pv25f6>
-              <div
-                class="row align-items-center overflow-hidden bg-gradient-purple text-white"
-                data-astro-cid-j7pv25f6
-              >
-                <!-- Left Content -->
-                <div class="col-md-6 p-5" data-astro-cid-j7pv25f6>
-                  <span data-astro-cid-j7pv25f6
-                    >Get a Connected Experience -
-                  </span>
-                  <h2
-                    class="display-5 mt-3 fw-normal text-white"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <span class="developer-highlight" data-astro-cid-j7pv25f6>
-                      Tell Your Brand Story Your Way.
-                    </span>
-                  </h2>
-                  <p class="mt-4 mb-4" data-astro-cid-j7pv25f6>
-                    Whether you're technical or not, integrating Wonderpay is
-                    effortless.
-                  </p>
-                  <p class="mt-4 mb-4" data-astro-cid-j7pv25f6>
-                    Leverage all our exclusive features with the following:
-                  </p>
-                  <h5 class="fw-normal mb-4 text-white" data-astro-cid-j7pv25f6>
-                    Easy Integrations > API References > Webhooks
-                  </h5>
-                  <img
-                    src="/assets/website-assets/home-page/section-4/Vector1.svg"
-                    class="img-fluid vector1"
-                    loading="lazy"
-                    decoding="async"
-                    data-astro-cid-j7pv25f6
-                  />
-                </div>
-                <!-- Right Image with Card -->
-                <div
-                  class="col-md-6 position-relative p-0 z-1 text-end"
-                  data-astro-cid-j7pv25f6
-                >
-                  <img
-                    src="/assets/website-assets/home-page/section-4/Developer-img.png"
-                    alt="Developer Image"
-                    class="img-fluid dev-img object-fit-cover"
-                    loading="lazy"
-                    decoding="async"
-                    data-astro-cid-j7pv25f6
-                  />
-                  <div
-                    class="stats-box position-absolute shadow text-center"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <!-- <h3 class="fw-bold mb-2 text-white gradient-text-light">120+</h3> -->
-                    <p class="mb-0 text-white" data-astro-cid-j7pv25f6>
-                      Seamless setup. Powerful performance. No tech barriers
-                    </p>
-                  </div>
-                </div>
-                <img
-                  src="/assets/website-assets/home-page/section-4/vector2.svg"
-                  class="img-fluid vector2 blink-img"
-                  loading="lazy"
-                  decoding="async"
-                  data-astro-cid-j7pv25f6
-                />
+            </a>
+
+            <!-- Card 4 -->
+            <a href="/pos" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/credit-card.png" alt="pos icon"/>
               </div>
-            </div>
-          </section>
-          <div class="section-container" data-astro-cid-j7pv25f6>
-            <astro-island
-              uid="13jPu2"
-              component-url="/_astro/ParallaxSection.COYUNjMQ.js"
-              component-export="default"
-              renderer-url="/_astro/client.DVxemvf8.js"
-              props='{"data-astro-cid-j7pv25f6":[0,true]}'
-              ssr
-              client="only"
-              opts='{"name":"ParallaxSection","value":"react"}'
-            ></astro-island>
-            <astro-island
-              uid="Z1PdQI7"
-              component-url="/_astro/BusinessUseSlider.BBmW-DNk.js"
-              component-export="default"
-              renderer-url="/_astro/client.DVxemvf8.js"
-              props='{"data-astro-cid-j7pv25f6":[0,true]}'
-              ssr
-              client="only"
-              opts='{"name":"BusinessUseSlider","value":"react"}'
-            ></astro-island>
-          </div>
-          <astro-island
-            uid="Z1dgymL"
-            component-url="/_astro/ServiceCardsSlider.BPXcFpqC.js"
-            component-export="default"
-            renderer-url="/_astro/client.DVxemvf8.js"
-            props='{"data-astro-cid-j7pv25f6":[0,true]}'
-            ssr
-            client="only"
-            opts='{"name":"ServiceCardsSlider","value":"react"}'
-          ></astro-island>
-          <!-- SECTION-7 -->
-          <section class="foot-testimonial" data-astro-cid-j7pv25f6>
-            <div
-              class="testimonial d-none d-lg-block position-relative"
-              id="followSection"
-              data-astro-cid-j7pv25f6
-            >
-              <div class="cursor-dot" data-astro-cid-j7pv25f6></div>
-              <div class="container py-5" data-astro-cid-j7pv25f6>
-                <div class="section-head-container" data-astro-cid-j7pv25f6>
-                  <h2 class="section-head display-4" data-astro-cid-j7pv25f6>
-                    Trusted by leaders from <br data-astro-cid-j7pv25f6 />
-                    <span data-astro-cid-j7pv25f6>various industries</span>
-                  </h2>
-                  <!--  <p>Our brand’s core values help us put our customers first every time. It has enabled us to stand out in the market and serve them as they expect from the very first meeting.</p> -->
-                </div>
-                <div class="testimonial-box-container" data-astro-cid-j7pv25f6>
-                  <!-- 1 -->
-                  <div
-                    class="testimonial-box testimonial-box-1"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo4.jpg"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          SHEKHAWAT JAIN
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Chartered Accountant</small
-                        >
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      We chose Wonderpay for its efficient, reliable, and
-                      transparent tax payments and financial transactions. Its
-                      real-time capabilities, user-friendly interface, and
-                      strong customer support enhance our experience, making
-                      Wonderpay a valued partner in our financial processes.
-                    </div>
-                  </div>
-                  <!-- 2 -->
-                  <div
-                    class="testimonial-box testimonial-box-2"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo5.jpg"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          Joyamore Dairy
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Milk Dairy</small
-                        >
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      JoyMore was facing cash flow issues in managing payment
-                      collections. It was a complex task, but WPay streamlined
-                      payment collection, making it smoother and more efficient
-                      & made us genuinely thankful.
-                    </div>
-                  </div>
-                  <!-- 3 -->
-                  <div
-                    class="testimonial-box testimonial-box-3"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo6.jpg"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          Agarwal Jagdish
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Engineer & Builder</small
-                        >
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      Wonderpay has been a great partner to us this year. Their
-                      comprehensive platform streamlined our transaction
-                      process, whether it is to receive payments from our
-                      customers or to visualize and manage our day-to-day
-                      payouts for various purposes using UPI, virtual accounts,
-                      and payment links.
-                    </div>
-                  </div>
-                  <!-- 4 -->
-                  <div
-                    class="testimonial-box testimonial-box-4"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo1.png"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          Surendra Awana
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Gir Desi Dairy
-                        </small>
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      We usually receive multiple payments, but we don't get
-                      explicit confirmation of who paid, when, and for what
-                      purpose. It was a challenge for me and my team to match
-                      each entry, but when I connected with Wonderpay, they told
-                      us about reconciliation and other benefits.
-                    </div>
-                  </div>
-                  <div
-                    class="testimonial-box testimonial-box-5"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo2.png"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          Surendra
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Surendra Public School
-                        </small>
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      School means getting multiple payments, including pay-in
-                      and pay-out from different methods. There was no
-                      transparency, and we were losing trust; the process for
-                      collecting the fee was overwhelming. Thanks to Wonderpay
-                      for making our payment process transparent and secure, and
-                      for building trust within our system.
-                    </div>
-                  </div>
-                  <div
-                    class="testimonial-box testimonial-box-6"
-                    data-astro-cid-j7pv25f6
-                  >
-                    <div
-                      class="d-flex align-items-center gap-2"
-                      data-astro-cid-j7pv25f6
-                    >
-                      <img
-                        src="../../../assets/website-assets/home-page/section-8/logo3.png"
-                        class="profile-pic rounded-circle"
-                        alt="User"
-                        loading="lazy"
-                        decoding="async"
-                        width="40"
-                        height="40"
-                        loading="lazy"
-                        decoding="async"
-                        data-astro-cid-j7pv25f6
-                      />
-                      <div data-astro-cid-j7pv25f6>
-                        <h6 class="mb-0 fw-semibold" data-astro-cid-j7pv25f6>
-                          Super Travels & Holidays
-                        </h6>
-                        <small class="text-muted" data-astro-cid-j7pv25f6
-                          >Tour & Travel</small
-                        >
-                      </div>
-                    </div>
-                    <div class="testimonial-content" data-astro-cid-j7pv25f6>
-                      We aimed to provide a smoother, more memorable,
-                      professional, and secure experience for our customers.
-                      Wonderpay solved our payment collection and payout issue.
-                      It’s easy to use, integrates with existing systems,
-                      provides reconciliation. It eliminated the tension of
-                      collecting payments securely while ensuring full
-                      compliance.
-                    </div>
-                  </div>
-                </div>
+              <div class="card-text">
+                <strong>POS</strong>
+                <p>Accept all in-person payments from all digital methods effortlessly.</p>
               </div>
-            </div>
-            <div class="web-container">
-              <!-- ------------Footer-------- -->
-              <footer class="footer" role="contentinfo">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-3 mb-4 mb-md-0 footer-adress">
-                      <img
-                        src="../../../../assets/website-assets/common-images/logo/logo-black.png"
-                        alt="logo"
-                        class="mb-3 foot-logo mt-md-0 mt-4"
-                      />
-                      <!-- <img  src="../../../assets/website-assets/images/nav/logo-white.png" class="mb-3 foot-logo"  alt="" /> -->
-                      <p class="mt-2">
-                        WPay entered the market with the aim of simplifying
-                        payments for businesses across all sectors, whether it
-                        is to accept payments and disburse funds while
-                        implementing compliance, including GST, PCI DSS, and all
-                        payment types, such as taxes, working capital via TReDS,
-                        subscriptions, recurring payments, and EMI with eNACH.
-                      </p>
-                      <p class="social mt-3">
-                        <a
-                          href="https://www.linkedin.com/company/wonderpay-technologies-pvt-ltd/"
-                          target="_blank"
-                          ><span><i class="fab fa-linkedin"></i></span
-                        ></a>
-                        <a
-                          href="https://www.facebook.com/wonderpaytec"
-                          target="_blank"
-                          ><span> <i class="fa-brands fa-facebook"></i></span
-                        ></a>
-                        <a href="https://x.com/wonderpaytec" target="_blank"
-                          ><span><i class="fa-brands fa-twitter"></i></span
-                        ></a>
-                        <a
-                          href="https://www.instagram.com/wonderpaytec"
-                          target="_blank"
-                          ><span><i class="fa-brands fa-instagram"></i></span
-                        ></a>
-                        <a
-                          href="https://www.pinterest.com/wonderpaytec"
-                          target="_blank"
-                          ><span><i class="fa-brands fa-pinterest"></i></span
-                        ></a>
-                      </p>
-                    </div>
-                    <div class="col-md-8 ms-auto">
-                      <div class="row site-section pt-0">
-                        <div class="col-md-3 mb-4 mb-md-0">
-                          <h3>Company</h3>
-                          <ul class="list-unstyled">
-                            <li><a href="/" data-astro-reload>Home</a></li>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/pricing">Pricing</a></li>
-                            <li><a href="/services">Services</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/careers">Careers</a></li>
-                            <li><a href="/contact-us">Contact Us </a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-3 mb-4 mb-md-0">
-                          <h3>Products</h3>
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href="/payment-gateway">Payment Collection</a>
-                            </li>
-                            <li><a href="/fees">Auto fees Collection</a></li>
-                            <li><a href="/teller">Teller</a></li>
-                            <li><a href="/pos">POS</a></li>
-                            <li><a href="/smart-billing">Smart Billing</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-md-3 mb-4 mb-md-0">
-                          <h3>Legal</h3>
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href="/privacy-policy">Privacy Policy</a>
-                            </li>
-                            <li>
-                              <a href="/terms-and-conditions"
-                                >Terms & Conditions</a
-                              >
-                            </li>
-                            <li><a href="/refund-policy">Refund Policy</a></li>
-                            <li><a href="/disclaimer">Disclaimer</a></li>
-                            <li>
-                              <a href="/cancellation-policy"
-                                >Cancellation policy</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="col-md-3 mb-4 mb-md-0">
-                          <h3>Contact Us</h3>
-                          <ul class="list-unstyled">
-                            <li>
-                              <a href="https://g.co/kgs/znXHedR"
-                                >402-404, 4th floor, Jagdish Enclave, Hawa
-                                Sadak, Civil Lines, Jaipur, Rajasthan 302006
-                              </a>
-                            </li>
-                            <li>
-                              <a href="mailto:info@wonderpaytec.com"
-                                >info@wonderpaytec.com</a
-                              >
-                            </li>
-                            <li><a href="tel:18005707737">1800 570 7737</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 mt-1 border-top-footer">
-                      <h6 class="mb-0 text-center mt-3">
-                        <a
-                          href="https://ocicert.com/verify-clients.php?certificate-body=WONDERPAY+TECHNOLOGIES+PRIVATE+LIMITED&certificate-no=UQ%2F25038"
-                          target="_blank"
-                          ><img
-                            src="/pcidss.png"
-                            alt="pci dss"
-                            style="height: 40px"
-                        /></a>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Copyright 2025 -
-                        Wonderpay Technologies |
-                        <a
-                          href="/terms-and-conditions"
-                          class="text-dark text-decoration-underline"
-                          >Terms & Conditions</a
-                        >
-                        |
-                        <a
-                          href="/privacy-policy"
-                          class="text-dark text-decoration-underline"
-                          >Privacy Policy</a
-                        >
-                      </h6>
-                    </div>
-                    <!--  -->
-                  </div>
-                </div>
-              </footer>
-              <!-- ------------Footer-------- -->
-            </div>
-            <!--  <FooterContent data-astro-rerun/> -->
-          </section>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="/smart-billing" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/bill.png" alt="sb icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Smart Billing</strong>
+                <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+              </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="/teller" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/teller.png" alt="teller icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Teller</strong>
+                <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
+              </div>
+            </a>
+          </div> <!-- .cards-grid -->
+        </div> <!-- .dropdown-content -->
+      </div> <!-- .dropdown -->
+
+      <a href="#" class="nav-item">Pricing</a>
+      <a href="#" class="nav-item">Services</a>
+      <a href="#" class="nav-item">About</a>
+      <a href="pages/contact.html" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a class="login-btn" href="pages/login.html">Login →</a>
+
+      <!-- hamburger for small screens -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+    <!-- HERO SECTION -->
+   <!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="hero-text">
+            <h2>Empowering Digital Payments to Fuel India’s Economic Growth </h2>
+            <p>
+                A unified platform to accelerate your business growth.
+                Ezypayment simplifies and automates payments with a smart
+                dashboard — anytime, anywhere.
+            </p>
         </div>
-      </div>
+
+        <!-- Right Side Banner Phone Image -->
+        <div class="hero-image">
+            <img src="assets/images/banner-imgs.png" alt="Ezypayment App Preview">
+        </div>
     </div>
-    <div data-astro-cid-j7pv25f6>
-      <a
-        class="move-top"
-        href="#"
-        onClick="window.scrollToTop()"
-        data-astro-cid-j7pv25f6
-        ><i class="fa-solid fa-caret-up" data-astro-cid-j7pv25f6></i
-      ></a>
-    </div>
-    <astro-island
-      uid="Z21qV7z"
-      component-url="/_astro/GlobalAnimations.52QpfAJp.js"
-      component-export="default"
-      renderer-url="/_astro/client.DVxemvf8.js"
-      props='{"data-astro-cid-j7pv25f6":[0,true]}'
-      ssr
-      client="only"
-      opts='{"name":"GlobalAnimations","value":"react"}'
-    ></astro-island>
-    <img
-      src="/assets/website-assets/common-images/home-common/moving-card-1.svg"
-      class="moving-card-1 d-none d-xxl-block"
-      alt=""
-      loading="lazy"
-      decoding="async"
-      data-astro-cid-j7pv25f6
-    />
-    <img
-      src="/assets/website-assets/common-images/home-common/moving-card-1.svg"
-      class="moving-card-2 d-none d-xxl-block"
-      alt=""
-      loading="lazy"
-      decoding="async"
-      data-astro-cid-j7pv25f6
-    />
-    <img
-      src="/assets/website-assets/common-images/home-common/moving-card-1.svg"
-      class="moving-card-3 d-none d-xxl-block"
-      alt=""
-      loading="lazy"
-      decoding="async"
-      data-astro-cid-j7pv25f6
-    />
+
+    <!-- Highlight Box -->
+    <!-- <div class="hero-box">
+        <div class="step-circle">1</div>
+        <h3>Get Registered</h3>
+        <ul>
+            <li>Quick 2-minute signup</li>
+            <li>Email verification</li>
+            <li>Secure password creation</li>
+            <li>Account activation</li>
+        </ul>
+    </div> -->
+</section>
+
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Instant Settlements</h3>
+            <p>Disburse your funds instantly and establish strong customer relationships.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>UPI Collections</h3>
+            <p>Experience seamless transactions with instant payments and inclusive features.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Open Virtual Account</h3>
+            <p>Build loyal customers and manage payments with real-time reconciliation.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-row">
+            <div class="footer-about">
+                <h3>EZYPAYMENT</h3>
+                <p>
+                    Ezypayment simplifies payments across all sectors, offering 
+                    secure, compliant, and fast financial solutions.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Pricing</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Products</h4>
+                <a href="#">Payment Collection</a>
+                <a href="#">Auto Fees Collection</a>
+                <a href="#">Smart Billing</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Refund Policy</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>info@ezypayment.com</p>
+                <p>1800 570 7789</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Ezypayment • All Rights Reserved
+        </div>
+    </footer>
+
     <script>
-      const bannerImg = document.querySelector(".banner-img");
-      const maxScroll = 500;
-      const maxTranslateY = -50;
-      const maxScale = 1.1;
+  (function(){
+    const drop = document.getElementById('productsDropdown');
+    const dropBtn = drop.querySelector('.dropbtn');
+    const dropContent = drop.querySelector('.dropdown-content');
 
-      function clamp(value, min, max) {
-        return Math.min(Math.max(value, min), max);
-      }
+    // toggle open/close
+    dropBtn.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      const open = drop.classList.toggle('open');
+      dropBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      dropContent.setAttribute('aria-hidden', open ? 'false' : 'true');
+    });
 
-      function updateTransform() {
-        const scrollY = window.scrollY;
-        const scrollProgress = clamp(scrollY / maxScroll, 0, 1);
-        const translateY = scrollProgress * maxTranslateY;
-        const scale = 1 + (maxScale - 1) * scrollProgress;
-        bannerImg.style.transform = `translate3d(0px, ${translateY}px, 0px) scale(${scale}, ${scale})`;
-        requestAnimationFrame(updateTransform);
+    // close when clicking outside
+    document.addEventListener('click', (e)=>{
+      if(!drop.contains(e.target)){
+        drop.classList.remove('open');
+        dropBtn.setAttribute('aria-expanded','false');
+        dropContent.setAttribute('aria-hidden','true');
       }
-      requestAnimationFrame(updateTransform);
-    </script>
-  </body>
+    });
+
+    // keyboard: Esc closes
+    document.addEventListener('keydown', (ev)=>{
+      if(ev.key === 'Escape') {
+        drop.classList.remove('open');
+        dropBtn.setAttribute('aria-expanded','false');
+        dropContent.setAttribute('aria-hidden','true');
+      }
+    });
+
+    // hamburger toggle (mobile)
+    const ham = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav-links');
+
+    ham.addEventListener('click', ()=>{
+      const open = nav.classList.toggle('mobile-open');
+      ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+      // make sure dropdown is closed when mobile opens
+      drop.classList.remove('open');
+      drop.querySelector('.dropdown-content').setAttribute('aria-hidden','true');
+    });
+
+    // optional: auto-close mobile nav on link click
+    document.querySelectorAll('.nav-links a').forEach(a=>{
+      a.addEventListener('click', ()=> {
+        if(nav.classList.contains('mobile-open')){
+          nav.classList.remove('mobile-open');
+          ham.setAttribute('aria-expanded','false');
+        }
+      });
+    });
+  })();
+</script>
+
+
+</body>
 </html>
