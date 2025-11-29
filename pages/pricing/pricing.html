@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezypayment</title>
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+                <!-- dummy logo (replace with real logo) -->
+                <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+            </a>
+
+            <nav class="nav-links" role="navigation" aria-label="Primary">
+                <a href="/eazypayements/index.html" class="nav-item">Home</a>
+
+                <div class="dropdown" id="productsDropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                        Products <span class="caret">▾</span>
+                    </button>
+
+                    <div class="dropdown-content" role="menu" aria-hidden="true">
+                        <div class="cards-grid">
+                            <!-- Card 1 -->
+                            <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card"
+                                role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payment Gateway</strong>
+                                    <p>Accept all payments via any method with seamless API integration.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="/fees" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/rupeeicon.png" alt="fees icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Fees</strong>
+                                    <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="/payout" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/payout.png" alt="payout icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payout</strong>
+                                    <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 4 -->
+                            <a href="/pos" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-card.png" alt="pos icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>POS</strong>
+                                    <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 5 -->
+                            <a href="/smart-billing" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/bill.png" alt="sb icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Smart Billing</strong>
+                                    <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 6 -->
+                            <a href="/teller" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/teller.png" alt="teller icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Teller</strong>
+                                    <p>Create invoice, collect payments, reconcile &amp; manage working capital via
+                                        TReDs.</p>
+                                </div>
+                            </a>
+                        </div> <!-- .cards-grid -->
+                    </div> <!-- .dropdown-content -->
+                </div> <!-- .dropdown -->
+
+                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="actions">
+                <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+
+                <!-- hamburger for small screens -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Pricing Hero Section  -->
+    <section class="pricing-hero">
+        <div class="pricing-container">
+            <!-- LEFT SIDE -->
+            <div class="pricing-left">
+                <h1>
+                    Low Charges Better <br />
+                    <span>Cash Flow Easy Integration</span>
+                </h1>
+
+                <p>
+                    Wonderpay offers a full-stack payments solution that caters to
+                    <br />
+                    businesses of all sizes.
+                </p>
+                <p>
+                    Accept payments from anywhere, across all channels, easily, with
+                    <br />
+                    minimal payment gateway charges.
+                </p>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="pricing-right">
+                <p class="sub">Pricing Made Personalized</p>
+                <h2>Customized pricing<br />for every business</h2>
+
+                <div class="cta-btn">Contact Sales →</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startup business  -->
+
+    <section class="startup-ideas">
+        <h1>
+            Optimal for <span>Small, Medium, Large </span> <br />Enterprises &
+            Startups
+        </h1>
+        <div class="highlight-text">
+            <p><span class="span-tick">✔️</span>Support net banking</p>
+
+            <p><span class="span-tick">✔️</span>Accept all debit/credit cards</p>
+            <p>
+                <span class="span-tick">✔️</span>Easy fund transfer via eWallets & UPI
+            </p>
+        </div>
+        <div class="payment-cards">
+            <!-- UPI -->
+            <div class="payment-card">
+                <h3>UPI</h3>
+                <div class="divider"></div>
+
+                <div class="logos">
+                    <img src="https://www.svgrepo.com/show/303357/google-pay-primary-logo-logo.svg" alt="" />
+                    <img src="data:image/jpeg;base64,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"
+                        alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                        <polygon fill="#388e3c" points="29,4 18,45 40,24"></polygon>
+                        <polygon fill="#f57c00" points="21,3 10,44 32,23"></polygon>
+                    </svg>
+                </div>
+
+                <a class="more-link" href="#">+ See 14 Others</a>
+            </div>
+
+            <!-- Net Banking -->
+            <div class="payment-card">
+                <h3>NET Banking</h3>
+                <div class="divider"></div>
+
+                <div class="logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Axis_Bank_logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/ICICI_Bank_Logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_of_IDFC_First_Bank.svg" alt="" />
+                </div>
+
+                <a class="more-link" href="#">+ 54 Others</a>
+            </div>
+
+            <!-- Debit Card -->
+            <div class="payment-card">
+                <h3>Debit Card</h3>
+                <div class="divider"></div>
+
+                <div class="logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg" alt="" />
+                </div>
+
+                <a class="more-link" href="#">+ 34 Others</a>
+            </div>
+
+            <!-- Credit Card -->
+            <div class="payment-card">
+                <h3>Credit Card</h3>
+                <div class="divider"></div>
+
+                <div class="logos">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="" />
+                </div>
+
+                <a class="more-link" href="#">+ 12 Others</a>
+            </div>
+        </div>
+    </section>
+    <!-- Plans Core Feature -->
+    <section class="trust-label">
+        <h1>
+            All Plans Come with <br /><span class="t-label">Core Features</span>
+        </h1>
+    </section>
+    <!-- Features section pricing -->
+    <section class="pricing-features-section">
+        <!-- One-time Subscription -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12a9 9 0 1 1 3 6.7" />
+                <polyline points="3 16 3 12 7 12" />
+                <polyline points="9 12 11 14 15 10" />
+            </svg>
+            <h3>One-time Subscription</h3>
+            <p>
+                Includes KYC verification, setup, and the platform fee, with no hidden
+                charges.
+            </p>
+        </div>
+
+        <!-- Instant Settlements -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+            </svg>
+            <h3>Instant Settlements</h3>
+            <p>
+                Accept your payment instantly with our on-demand fund access in just
+                minutes, not days.
+            </p>
+        </div>
+
+        <!-- Unified Dashboard -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+            <h3>Unified Dashboard</h3>
+            <p>
+                Experience our organized dashboard, designed to help you reconcile
+                payouts, taxes, and more.
+            </p>
+        </div>
+
+        <!-- Security & Compliance -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10z" />
+                <polyline points="9 12 11 14 15 10" />
+            </svg>
+            <h3>Security & Compliance</h3>
+            <p>
+                Focus on business growth, while we handle all compliance including
+                PCI-DSS, GST, TDS, and RBI guidelines.
+            </p>
+        </div>
+
+        <!-- Developer & No-Code Tools -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="8 6 3 12 8 18" />
+                <polyline points="16 6 21 12 16 18" />
+                <line x1="12" y1="4" x2="12" y2="20" />
+            </svg>
+            <h3>Developer & No-Code Tools</h3>
+            <p>
+                We offer the most straightforward setup process with APIs, SDKs, and
+                webhooks.
+            </p>
+        </div>
+
+        <!-- Encrypted Transactions -->
+        <div class="pricing-feature-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#000"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="10" rx="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                <circle cx="12" cy="16" r="2" />
+            </svg>
+            <h3>Encrypted Transactions</h3>
+            <p>
+                We implement best security practices including SSL/TLS to protect all
+                sensitive data.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Call Us Section -->
+    <section class="call-us-section">
+        <div class="card-container text-center position-relative text-white" data-astro-cid-lmkygsfs="">
+            <h4 class="display-4 font-weight-500" data-astro-cid-lmkygsfs="">
+                Ready to Grow?<br data-astro-cid-lmkygsfs="" />
+                <span class="font-weight-600" data-astro-cid-lmkygsfs="">Start Now!</span>
+            </h4>
+            <p data-astro-cid-lmkygsfs="">
+                No lock‑in, transparent pricing <br data-astro-cid-lmkygsfs="" />
+                Switch plans anytime as you scale
+            </p>
+            <a href="/contact-us" data-astro-cid-lmkygsfs="">
+                <button type="button" class="btn btn-light py-3 px-4 mt-4 font-weight-500 position-relative"
+                    data-astro-cid-lmkygsfs="">
+                    <img src="/assets/website-assets/common-images/contact-us-btn-icon.svg" class="me-1" alt=""
+                        data-astro-cid-lmkygsfs="" />Contact Us
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FAQ Section Pricing -->
+
+    <!-- FAQ Section Pricing -->
+    <section class="faq-section">
+
+        <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
+        <h4></h4>
+
+        <div class="faq-container">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <button class="faq-question">What is included in the pricing?</button>
+                <div class="faq-answer">
+                    <p>Our pricing includes setup, KYC verification, dashboard access, and complete support with no
+                        hidden charges.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <button class="faq-question">Do you offer instant settlements?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can enable on-demand instant settlements and receive funds within minutes.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <button class="faq-question">Is there any long-term contract?</button>
+                <div class="faq-answer">
+                    <p>No, there are no lock-ins. You can switch plans or cancel anytime without penalties.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <button class="faq-question">Are the transactions secure?</button>
+                <div class="faq-answer">
+                    <p>We follow industry-grade security including SSL/TLS, PCI-DSS compliance, encryption, and fraud
+                        detection.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <button class="faq-question">Do you support no-code integrations?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can integrate using API, plugins, or no-code builders like Shopify, WordPress, and
+                        Webflow.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item">
+                <button class="faq-question">How do I contact support?</button>
+                <div class="faq-answer">
+                    <p>You can reach our support team anytime through chat, email, or the contact page.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div include-html="/eazypayements/pages/layout/footer.html"></div>
+    <script src="../../pages/script/include.js"></script>
+    <script src="../../pages/script/mobile-header.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const includeElements = document.querySelectorAll("[include-html]");
+
+            includeElements.forEach(async function (el) {
+                const file = el.getAttribute("include-html");
+                if (file) {
+                    const response = await fetch(file);
+                    const text = await response.text();
+                    el.innerHTML = text;
+                    el.removeAttribute("include-html");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close all other FAQs
+                faqItems.forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+
+                // Toggle current one
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

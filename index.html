@@ -1,136 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezypayment</title>
-    <link rel="stylesheet" href="/eazypayements/assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ezypayment</title>
+  <link rel="stylesheet" href="/eazypayements/assets/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
+  <!-- HEADER -->
+  <header class="header" role="banner">
+    <div class="nav-container">
+      <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+        <!-- dummy logo (replace with real logo) -->
+        <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+      </a>
 
-    <!-- HEADER -->
-<header class="header" role="banner">
-  <div class="nav-container">
-    <a href="#" class="logo-area" aria-label="Ezypayment home">
-      <!-- dummy logo (replace with real logo) -->
-      <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo"/>
-    </a>
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="/eazypayements/index.html" class="nav-item">Home</a>
 
-    <nav class="nav-links" role="navigation" aria-label="Primary">
-      <a href="#" class="nav-item">Home</a>
+        <div class="dropdown" id="productsDropdown">
+          <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+            Products <span class="caret">▾</span>
+          </button>
 
-      <div class="dropdown" id="productsDropdown">
-        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
-          Products <span class="caret">▾</span>
+          <div class="dropdown-content" role="menu" aria-hidden="true">
+            <div class="cards-grid">
+              <!-- Card 1 -->
+              <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
+                </div>
+                <div class="card-text">
+                  <strong>Payment Gateway</strong>
+                  <p>Accept all payments via any method with seamless API integration.</p>
+                </div>
+              </a>
+
+              <!-- Card 2 -->
+              <a href="/fees" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/rupeeicon.png" alt="fees icon" />
+                </div>
+                <div class="card-text">
+                  <strong>Fees</strong>
+                  <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                </div>
+              </a>
+
+              <!-- Card 3 -->
+              <a href="/payout" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/payout.png" alt="payout icon" />
+                </div>
+                <div class="card-text">
+                  <strong>Payout</strong>
+                  <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                </div>
+              </a>
+
+              <!-- Card 4 -->
+              <a href="/pos" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/credit-card.png" alt="pos icon" />
+                </div>
+                <div class="card-text">
+                  <strong>POS</strong>
+                  <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                </div>
+              </a>
+
+              <!-- Card 5 -->
+              <a href="/smart-billing" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/bill.png" alt="sb icon" />
+                </div>
+                <div class="card-text">
+                  <strong>Smart Billing</strong>
+                  <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+                </div>
+              </a>
+
+              <!-- Card 6 -->
+              <a href="/teller" class="tab-card" role="menuitem">
+                <div class="icon-circle">
+                  <img src="assets/images/teller.png" alt="teller icon" />
+                </div>
+                <div class="card-text">
+                  <strong>Teller</strong>
+                  <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
+                </div>
+              </a>
+            </div> <!-- .cards-grid -->
+          </div> <!-- .dropdown-content -->
+        </div> <!-- .dropdown -->
+
+        <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item">Pricing</a>
+        <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
+        <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
+        <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+
+        <!-- hamburger for small screens -->
+        <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
-
-        <div class="dropdown-content" role="menu" aria-hidden="true">
-          <div class="cards-grid">
-            <!-- Card 1 -->
-            <a href="/payment-gateway" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/credit-cartsIcon.png" alt="pg icon"/>
-              </div>
-              <div class="card-text">
-                <strong>Payment Gateway</strong>
-                <p>Accept all payments via any method with seamless API integration.</p>
-              </div>
-            </a>
-
-            <!-- Card 2 -->
-            <a href="/fees" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/rupeeicon.png" alt="fees icon"/>
-              </div>
-              <div class="card-text">
-                <strong>Fees</strong>
-                <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
-              </div>
-            </a>
-
-            <!-- Card 3 -->
-            <a href="/payout" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/payout.png" alt="payout icon"/>
-              </div>
-              <div class="card-text">
-                <strong>Payout</strong>
-                <p>Schedule auto payouts to anyone for any purpose at any time.</p>
-              </div>
-            </a>
-
-            <!-- Card 4 -->
-            <a href="/pos" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/credit-card.png" alt="pos icon"/>
-              </div>
-              <div class="card-text">
-                <strong>POS</strong>
-                <p>Accept all in-person payments from all digital methods effortlessly.</p>
-              </div>
-            </a>
-
-            <!-- Card 5 -->
-            <a href="/smart-billing" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/bill.png" alt="sb icon"/>
-              </div>
-              <div class="card-text">
-                <strong>Smart Billing</strong>
-                <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
-              </div>
-            </a>
-
-            <!-- Card 6 -->
-            <a href="/teller" class="tab-card" role="menuitem">
-              <div class="icon-circle">
-                <img src="assets/images/teller.png" alt="teller icon"/>
-              </div>
-              <div class="card-text">
-                <strong>Teller</strong>
-                <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
-              </div>
-            </a>
-          </div> <!-- .cards-grid -->
-        </div> <!-- .dropdown-content -->
-      </div> <!-- .dropdown -->
-
-      <a href="#" class="nav-item">Pricing</a>
-      <a href="#" class="nav-item">Services</a>
-      <a href="#" class="nav-item">About</a>
-      <a href="pages/contact.html" class="nav-item">Contact</a>
-    </nav>
-
-    <div class="actions">
-      <a class="login-btn" href="pages/login.html">Login →</a>
-
-      <!-- hamburger for small screens -->
-      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-
-    <!-- HERO SECTION -->
-   <!-- HERO SECTION -->
-<section class="hero">
+  <!-- HERO SECTION -->
+  <!-- HERO SECTION -->
+  <section class="hero">
     <div class="hero-inner">
+      <div class="hero-text">
+        <h2>
+          Empowering Digital Payments to Fuel India’s
+          <span class="span-text">Economic Growth</span>
+        </h2>
+        <p>
+          A unified platform to accelerate your business growth. Ezypayment
+          simplifies and automates payments with a smart dashboard — anytime,
+          anywhere.
+        </p>
+        <a type="button" class="btn btn-primary py-3 px-4 text-white hero-btn" href="#" data-astro-cid-j7pv25f6=""><img
+            src="/assets/website-assets/common-images/contact-us-btn-icon.svg" alt="" data-astro-cid-j7pv25f6="" />
+          &nbsp;Sign up now</a>
+      </div>
 
-        <div class="hero-text">
-            <h2>Empowering Digital Payments to Fuel India’s Economic Growth </h2>
-            <p>
-                A unified platform to accelerate your business growth.
-                Ezypayment simplifies and automates payments with a smart
-                dashboard — anytime, anywhere.
-            </p>
-        </div>
-
-        <!-- Right Side Banner Phone Image -->
-        <div class="hero-image">
-            <img src="assets/images/banner-imgs.png" alt="Ezypayment App Preview">
-        </div>
+      <!-- Right Side Banner Phone Image -->
+      <div class="hero-image">
+        <img src="/assets/images/banner-imgs.png" alt="Ezypayment App Preview" />
+      </div>
     </div>
 
     <!-- Highlight Box -->
@@ -144,129 +151,348 @@
             <li>Account activation</li>
         </ul>
     </div> -->
-</section>
+  </section>
+  <!-- True Lable Text -->
+  <section class="trust-label">
+    <h1>
+      Trusted by Leading Brands <br /><span class="t-label">Chosen for Reliability</span>
+    </h1>
+  </section>
+
+  <!-- Client Logo Section-->
+
+  <div class="logo-img-client col-md-9 overflow-hidden position-relative mx-auto mt-3" data-astro-cid-j7pv25f6="">
+    <div class="scroll-wrapper" data-astro-cid-j7pv25f6="">
+      <div class="logo-track d-flex align-items-center" data-astro-cid-j7pv25f6="">
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo1.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo2.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo3.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo4.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo5.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo6.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo7.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+        <div class="logo-wrapper mx-2" data-astro-cid-j7pv25f6="">
+          <img src="/eazypayements/assets/website-assets/common-images/logo/logo9.png" alt="Logo 1" class="logo-img"
+            loading="lazy" decoding="async" data-astro-cid-j7pv25f6="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bring Text Section  -->
+  <section class="bring-section">
+    <div class="bring-">
+      <h1>Bring More Out of EPay</h1>
+      <p>
+        A unified platform to accelerate your business growth. It simplifies
+        and automates payments; leverage Wonderpay’s comprehensive dashboard
+        anytime, anywhere, and bring more out of it.
+      </p>
+    </div>
+  </section>
+
+  <!-- KYC Section Cards -->
+  <div class="">KYC SECTION</div>
+  <!-- Compliance Text Section  -->
+  <section class="compliance-section">
+    <div class="compliance-">
+      <h1>
+        <span>Built for Speed. Designed for Scale. <br /></span> Backed by
+        Compliance.
+      </h1>
+      <p>
+        Wonderpay fuels your business growth in the booming economy with its
+        #1 powerful financial technology. Get a unified dashboard and manage
+        your business journey with ease, visualizing everything in one place.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <!-- Card 1 -->
+    <div class="feature-card">
+      <h2><span>Instant</span> Settlements</h2>
+      <p>
+        Disburse your funds for all purposes within minutes. It will help your
+        organization establish its market presence and foster strong
+        relationships with its target customers.
+      </p>
+      <div class="feature-img">
+        <img src="assets/website-assets/home-page/section-3/Instant-Settlement.png" alt="Settlements Image" />
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="feature-card">
+      <h2><span>UPI</span> Collections</h2>
+      <p>
+        Experience seamless transactions and improve your business cash flow
+        with instant payments and inclusive features.Can Integrate with any
+        third-party Payments Apps.
+      </p>
+      <div class="feature-img">
+        <img src="assets/website-assets/home-page/section-3/Upi-Collection.svg" alt="UPI Image" />
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="feature-card">
+      <h2><span>Open Instant</span> Virtual Account</h2>
+      <p>
+        Be organized and build a loyal customer base while having
+        GST-compliant invoicing, multi-entity billing, collecting payments in
+        your virtual account with real-time reconciliation, and also accessing
+        invoice financing via TReDS.
+      </p>
+      <div class="feature-img">
+        <img src="assets/website-assets/home-page/section-3/Virtual-Account.png" alt="Virtual Account Image" />
+      </div>
+    </div>
+  </section>
+  <!-- Integration Section  -->
+  <section class="integration">
+    <div class="integration-content">
+      <h4>Get a Connected Experience –</h4>
+      <h1>Tell Your Brand Story Your Way.</h1>
+
+      <p>
+        Whether you're technical or not, integrating Wonderpay is effortless.
+      </p>
+
+      <p>Leverage all our exclusive features with the following:</p>
+
+      <h3>Easy Integrations > API References > Webhooks</h3>
+    </div>
+
+    <div class="integration-image">
+      <img src="assets//website-assets/home-page/section-4/Developer-img.png" alt="Integration Image" />
+    </div>
+  </section>
+
+  <!-- Endorse Section  -->
+  <section class="endorse-section">
+    <div class="endorse-content">
+      <h1>
+        Endorse Your Business<br />
+        <span>Reach With Our Embedded</span><br />
+        And Integrated Payments Tool
+      </h1>
+    </div>
+
+    <!-- Floating Icons -->
+    <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-5/top-left-2.svg"
+      class="float-icon wallet" />
+    <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-5/wallet-img.svg"
+      class="float-icon qr" />
+    <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-5/qr-img.svg" class="float-icon money" />
+    <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-5/laptop-img.svg"
+      class="float-icon card" />
+
+    <!-- Big preview image -->
+
+  </section>
+  <!-- Platform Label Text -->
+  <section class="trust-label">
+    <h1>
+      A Platform for All Businesses from<br /><span class="t-label">Any Industry.</span>
+    </h1>
+  </section>
 
 
-    <!-- FEATURES SECTION -->
-    <section class="features">
-        <div class="feature-card">
-            <h3>Instant Settlements</h3>
-            <p>Disburse your funds instantly and establish strong customer relationships.</p>
+  <!-- Platform section -->
+  <section class="scroll-card-section">
+    <div class="scroll-container">
+
+      <!-- CARD 1 -->
+      <div class="scroll-card">
+        <img src="https://picsum.photos/500/600?random=1" alt="Card Image">
+        <div class="card-overlay">
+          <h3>Card Title 1</h3>
+          <p>This is a short description for card one.</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="scroll-card">
+        <img src="https://picsum.photos/500/600?random=2" alt="Card Image">
+        <div class="card-overlay">
+          <h3>Card Title 2</h3>
+          <p>This is a short description for card two.</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="scroll-card">
+        <img src="https://picsum.photos/500/600?random=3" alt="Card Image">
+        <div class="card-overlay">
+          <h3>Card Title 3</h3>
+          <p>This is a short description for card three.</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="scroll-card">
+        <img src="https://picsum.photos/500/600?random=4" alt="Card Image">
+        <div class="card-overlay">
+          <h3>Card Title 4</h3>
+          <p>This is a short description for card four.</p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="scroll-card">
+        <img src="https://picsum.photos/500/600?random=5" alt="Card Image">
+        <div class="card-overlay">
+          <h3>Card Title 5</h3>
+          <p>This is a short description for card five.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Customer Experience Label Text -->
+  <section class="trust-label">
+    <h1>
+      <span class="t-label">Let Your Customers Experience</span>
+    </h1>
+  </section>
+
+  <section class="three-cards-section">
+    <div class="cards-row">
+
+      <div class="simple-card">
+        <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-7/complaint-white.svg" alt="">
+        <h3>Comprehensive</h3>
+        <p>
+          Wonderpay makes you productive with easy reconciliation and secure UI/UX.
+        </p>
+      </div>
+
+      <div class="simple-card">
+        <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-7/bank-dark.svg"" alt="">
+            <h3>Complaint</h3>
+            <p>
+              We follow strict guidelines ensuring safe and regulated transactions.
+            </p>
+          </div>
+      
+          <div class=" simple-card">
+        <img src="https://wonderpaytec.com/assets/website-assets/home-page/section-7/bank-dark.svg" alt="">
+        <h3>Convenient Banking</h3>
+        <p>
+          Accept payments from all channels in the most convenient way.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!--  Trusted By Leaeder Label Text -->
+  <section class="trust-label">
+    <h1>
+      Trusted by leaders from<span class="t-label">various industries</span>
+    </h1>
+  </section>
+
+  <section class="clients-section">
+
+
+    <div class="client-grid">
+
+      <div class="client-card">
+        <div class="client-top">
+          <div class="avatar">
+            <img src="https://i.pravatar.cc/150?img=12">
+          </div>
+          <div class="client-meta">
+            <h4 class="client-name">Rahul Verma</h4>
+            <p class="client-role">Founder — FinTech App</p>
+          </div>
         </div>
 
-        <div class="feature-card">
-            <h3>UPI Collections</h3>
-            <p>Experience seamless transactions with instant payments and inclusive features.</p>
+        <p class="feedback">
+          The team delivered our project with exceptional quality. The UI looks clean and the performance is super
+          smooth.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+        </div>
+      </div>
+
+      <div class="client-card">
+        <div class="client-top">
+          <div class="avatar">
+            <img src="https://i.pravatar.cc/150?img=32">
+          </div>
+          <div class="client-meta">
+            <h4 class="client-name">Sana Mehta</h4>
+            <p class="client-role">CEO — Retail Startup</p>
+          </div>
         </div>
 
-        <div class="feature-card">
-            <h3>Open Virtual Account</h3>
-            <p>Build loyal customers and manage payments with real-time reconciliation.</p>
+        <p class="feedback">
+          Professional work, great communication, and timely delivery. Highly recommended for app development.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
         </div>
-    </section>
+      </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-row">
-            <div class="footer-about">
-                <h3>EZYPAYMENT</h3>
-                <p>
-                    Ezypayment simplifies payments across all sectors, offering 
-                    secure, compliant, and fast financial solutions.
-                </p>
-            </div>
-
-            <div class="footer-col">
-                <h4>Company</h4>
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Pricing</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Products</h4>
-                <a href="#">Payment Collection</a>
-                <a href="#">Auto Fees Collection</a>
-                <a href="#">Smart Billing</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Refund Policy</a>
-            </div>
-
-            <div class="footer-col">
-                <h4>Contact Us</h4>
-                <p>info@ezypayment.com</p>
-                <p>1800 570 7789</p>
-            </div>
+      <div class="client-card">
+        <div class="client-top">
+          <div class="avatar">
+            <img src="https://i.pravatar.cc/150?img=47">
+          </div>
+          <div class="client-meta">
+            <h4 class="client-name">Arun Sharma</h4>
+            <p class="client-role">Product Manager — SaaS Platform</p>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            © 2025 Ezypayment • All Rights Reserved
+        <p class="feedback">
+          Their attention to detail is impressive. The team clearly understands product design and user experience.
+        </p>
+
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
         </div>
-    </footer>
+      </div>
 
-    <script>
-  (function(){
-    const drop = document.getElementById('productsDropdown');
-    const dropBtn = drop.querySelector('.dropbtn');
-    const dropContent = drop.querySelector('.dropdown-content');
-
-    // toggle open/close
-    dropBtn.addEventListener('click', (e)=>{
-      e.stopPropagation();
-      const open = drop.classList.toggle('open');
-      dropBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      dropContent.setAttribute('aria-hidden', open ? 'false' : 'true');
-    });
-
-    // close when clicking outside
-    document.addEventListener('click', (e)=>{
-      if(!drop.contains(e.target)){
-        drop.classList.remove('open');
-        dropBtn.setAttribute('aria-expanded','false');
-        dropContent.setAttribute('aria-hidden','true');
-      }
-    });
-
-    // keyboard: Esc closes
-    document.addEventListener('keydown', (ev)=>{
-      if(ev.key === 'Escape') {
-        drop.classList.remove('open');
-        dropBtn.setAttribute('aria-expanded','false');
-        dropContent.setAttribute('aria-hidden','true');
-      }
-    });
-
-    // hamburger toggle (mobile)
-    const ham = document.getElementById('hamburger');
-    const nav = document.querySelector('.nav-links');
-
-    ham.addEventListener('click', ()=>{
-      const open = nav.classList.toggle('mobile-open');
-      ham.setAttribute('aria-expanded', open ? 'true' : 'false');
-      // make sure dropdown is closed when mobile opens
-      drop.classList.remove('open');
-      drop.querySelector('.dropdown-content').setAttribute('aria-hidden','true');
-    });
-
-    // optional: auto-close mobile nav on link click
-    document.querySelectorAll('.nav-links a').forEach(a=>{
-      a.addEventListener('click', ()=> {
-        if(nav.classList.contains('mobile-open')){
-          nav.classList.remove('mobile-open');
-          ham.setAttribute('aria-expanded','false');
-        }
-      });
-    });
-  })();
-</script>
+    </div>
+  </section>
 
 
+  <!-- FOOTER -->
+  <div include-html="/eazypayements/pages/layout/footer.html"></div>
+  <script src="/eazypayements/pages/script/include.js"></script>
+  <script src="/eazypayements/pages/script/mobile-header.js"></script>
 </body>
+
 </html>

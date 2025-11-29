@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+                <!-- dummy logo (replace with real logo) -->
+                <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+            </a>
+
+            <nav class="nav-links" role="navigation" aria-label="Primary">
+                <a href="/eazypayements/index.html" class="nav-item">Home</a>
+
+                <div class="dropdown" id="productsDropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                        Products <span class="caret">▾</span>
+                    </button>
+
+                    <div class="dropdown-content" role="menu" aria-hidden="true">
+                        <div class="cards-grid">
+                            <!-- Card 1 -->
+                            <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card"
+                                role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payment Gateway</strong>
+                                    <p>Accept all payments via any method with seamless API integration.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="/fees" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/rupeeicon.png" alt="fees icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Fees</strong>
+                                    <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="/payout" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/payout.png" alt="payout icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payout</strong>
+                                    <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 4 -->
+                            <a href="/pos" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/credit-card.png" alt="pos icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>POS</strong>
+                                    <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 5 -->
+                            <a href="/smart-billing" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/bill.png" alt="sb icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Smart Billing</strong>
+                                    <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 6 -->
+                            <a href="/teller" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/teller.png" alt="teller icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Teller</strong>
+                                    <p>Create invoice, collect payments, reconcile &amp; manage working capital via
+                                        TReDs.</p>
+                                </div>
+                            </a>
+                        </div> <!-- .cards-grid -->
+                    </div> <!-- .dropdown-content -->
+                </div> <!-- .dropdown -->
+
+                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="actions">
+                <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+
+                <!-- hamburger for small screens -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Refund Policy Section -->
+    <section class="refund-section">
+        <h1 class="title">REFUND POLICY</h1>
+        <h2 class="sub-title">Fees, Fund Transfer & Chargebacks</h2>
+
+        <p class="update-date">Last Updated: </p>
+
+        <ul class="policy-list">
+            <li>Fees, payout timelines, and reserves are detailed in your Merchant Agreement and subject to RBI settlement rules.</li>
+            <li>Payout timelines will be net of transaction fees, GST, chargebacks, and compliance holds.</li>
+            <li><strong>Chargeback Handling:</strong></li>
+            <ul class="nested">
+                <li>You must respond to chargeback notices with full supporting documents.</li>
+                <li>Failure may result in permanent loss of disputed funds.</li>
+            </ul>
+            <li>Chargebacks may incur additional fees as per your Merchant Agreement.</li>
+            <li>No payouts will be initiated on banking holidays; payouts resume next working day.</li>
+        </ul>
+    </section>
+
+          <div include-html="/eazypayements/pages/layout/footer.html"></div>
+  <script src="../../pages/script/include.js"></script>
+  <script src="../../pages/script/mobile-header.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+
+ 
+
+</body>
+</html>

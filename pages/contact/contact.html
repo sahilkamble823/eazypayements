@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/eazypayements/assets/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+<header class="header" role="banner">
+  <div class="nav-container">
+    <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+      <!-- dummy logo (replace with real logo) -->
+      <img src="../../assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo"/>
+    </a>
+
+    <nav class="nav-links" role="navigation" aria-label="Primary">
+      <a href="/eazypayements/index.html" class="nav-item">Home</a>
+
+      <div class="dropdown" id="productsDropdown">
+        <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          Products <span class="caret">▾</span>
+        </button>
+
+        <div class="dropdown-content" role="menu" aria-hidden="true">
+          <div class="cards-grid">
+            <!-- Card 1 -->
+            <a href="../product/payment-gateway.html" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="assets/images/credit-cartsIcon.png" alt="pg icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Payment Gateway</strong>
+                <p>Accept all payments via any method with seamless API integration.</p>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="/fees" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="../../assets/images/rupeeicon.png" alt="fees icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Fees</strong>
+                <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="/payout" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="../../assets/images/payout.png" alt="payout icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Payout</strong>
+                <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+              </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="/pos" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="../../assets/images/credit-card.png" alt="pos icon"/>
+              </div>
+              <div class="card-text">
+                <strong>POS</strong>
+                <p>Accept all in-person payments from all digital methods effortlessly.</p>
+              </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="/smart-billing" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="../../assets/images/bill.png" alt="sb icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Smart Billing</strong>
+                <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+              </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="/teller" class="tab-card" role="menuitem">
+              <div class="icon-circle">
+                <img src="../../assets/images/teller.png" alt="teller icon"/>
+              </div>
+              <div class="card-text">
+                <strong>Teller</strong>
+                <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
+              </div>
+            </a>
+          </div> <!-- .cards-grid -->
+        </div> <!-- .dropdown-content -->
+      </div> <!-- .dropdown -->
+
+      <a href="../pricing/pricing.html" class="nav-item">Pricing</a>
+      <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
+      <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
+      <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+
+      <!-- hamburger for small screens -->
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+ 
+
+
+<section class="contact-section">
+
+  <h2 class="title">Connect With Us</h2>
+  <p class="subtitle">Thanks for your interest in Ezypayment. We are excited to serve you & ready to tell your brand story.</p>
+
+  <div class="contact-container">
+
+   <a href="#" class="logo-area" aria-label="Ezypayment home">
+      <!-- dummy logo (replace with real logo) -->
+      <img src="../../assets/images/contact-us.svg" class="left-img" alt="EZYPAYMENT logo"/>
+    </a>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+      <div class="two-input">
+        <div>
+          <label>Name</label>
+          <input type="text" placeholder="Enter Name">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="Enter Email">
+        </div>
+      </div>
+
+      <div class="one-input">
+        <label>Mobile</label>
+        <input type="text" placeholder="Enter Mobile No.">
+      </div>
+
+      <div class="one-input">
+        <label>Message</label>
+        <textarea placeholder="Enter Message"></textarea>
+      </div>
+<button type="submit" class="send-btn small" id="submitBtn">
+  Send a Message
+  <div class="loader"></div>
+</button>
+
+    </div>
+
+    <!-- RIGHT SIDE INFO BOXES -->
+    <div class="info-boxes">
+
+      <!-- PHONE BOX -->
+      <div class="info-box">
+        <span class="info-circle"><i class="fa fa-phone"></i></span>
+        <div>
+          <small>Contact us:</small><br>
+          <strong>1800 570 7737</strong>
+        </div>
+      </div>
+
+      <!-- EMAIL BOX -->
+      <div class="info-box">
+        <span class="info-circle"><i class="fa fa-envelope"></i></span>
+        <div>
+          <small>Email us:</small>
+          <div class="email-section">
+            <p><strong>Support:</strong><br> onboarding@wonderpaytec.com</p>
+            <hr>
+            <p><strong>HR:</strong><br> hr@wonderpaytec.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHATSAPP BOX -->
+      <div class="info-box">
+        <span class="info-circle"><i class="fa-brands fa-whatsapp"></i></span>
+        <div>
+          <small>Whatsapp us:</small><br>
+          <strong>+91 81074 27787</strong>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <div include-html="/eazypayements/pages/layout/footer.html"></div>
+
+
+   <script src="/eazypayements/pages/script/include.js"></script>
+    <script src="/eazypayements/pages/script/mobile-header.js"></script>
+
+</body>
+</html>

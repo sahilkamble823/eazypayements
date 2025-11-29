@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Section</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../assets/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+                <!-- dummy logo (replace with real logo) -->
+                <img src="../../assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+            </a>
+
+            <nav class="nav-links" role="navigation" aria-label="Primary">
+                <a href="/eazypayements/index.html" class="nav-item">Home</a>
+
+                <div class="dropdown" id="productsDropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                        Products <span class="caret">▾</span>
+                    </button>
+
+                    <div class="dropdown-content" role="menu" aria-hidden="true">
+                        <div class="cards-grid">
+                            <!-- Card 1 -->
+                            <a href="../../pages/product/payment-gateway.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payment Gateway</strong>
+                                    <p>Accept all payments via any method with seamless API integration.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 2 -->
+                            <a href="/fees" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/rupeeicon.png" alt="fees icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Fees</strong>
+                                    <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 3 -->
+                            <a href="/payout" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/payout.png" alt="payout icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payout</strong>
+                                    <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 4 -->
+                            <a href="/pos" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/credit-card.png" alt="pos icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>POS</strong>
+                                    <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 5 -->
+                            <a href="/smart-billing" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/bill.png" alt="sb icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Smart Billing</strong>
+                                    <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
+                                </div>
+                            </a>
+
+                            <!-- Card 6 -->
+                            <a href="/teller" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="assets/images/teller.png" alt="teller icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Teller</strong>
+                                    <p>Create invoice, collect payments, reconcile &amp; manage working capital via
+                                        TReDs.</p>
+                                </div>
+                            </a>
+                        </div> <!-- .cards-grid -->
+                    </div> <!-- .dropdown-content -->
+                </div> <!-- .dropdown -->
+
+                <a href="#" class="nav-item">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+            </nav>
+
+            <div class="actions">
+                <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+
+                <!-- hamburger for small screens -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-services">
+
+        <div class="hero-container">
+
+            <!-- LEFT -->
+            <div class="hero-left " data-aos="fade-right" data-aos-duration="1000">
+                <h1 class="hero-title ">
+                    <span class="gradient-text">Smarter Solutions.</span><br>
+                    <span class="black-text">Seamless Experiences.</span><br>
+                    <span class="black-text">Growth-Driven.</span>
+                </h1>
+
+                <p class="hero-service-text">
+                    Let your business experience robust, scalable fintech infrastructure.
+                    We at Wonderpay are fueling India's growing economy to fulfill our
+                    dream in order to drive digital transformation at scale.
+                </p>
+
+                <a href="#" class="hero-btn">Be Part of the Journey</a>
+            </div>
+
+            <div class="hero-right aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1200">
+                <img src="./images/hero-img.svg" alt="Hero Image" class="hero-img">
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES 3 CARDS -->
+    <section class="services-section">
+
+        <h2 class="services-title" data-aos="fade-down" data-aos-duration="3000">
+            We Make Your Journey <span>Easy & Memorable</span>
+        </h2>
+
+        <div class="services-grid">
+
+            <div class="service-card" data-aos="fade-right" data-aos-duration="3000">
+                <img src="https://wonderpaytec.com/wp-content/uploads/2023/07/service-1.png" class="service-img" alt="">
+                <h4>Transparency & Information</h4>
+                <p>Clear and accurate information with transparent policies.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-duration="3000">
+                <img src="https://wonderpaytec.com/wp-content/uploads/2023/07/service-2.png" class="service-img" alt="">
+                <h4>Value & Quality</h4>
+                <p>Instant and reliable payment gateway ensuring top user experience.</p>
+            </div>
+
+            <div class="service-card" data-aos="fade-left" data-aos-duration="3000">
+                <img src="https://wonderpaytec.com/wp-content/uploads/2023/07/service-3.png" class="service-img" alt="">
+                <h4>Custom Service & Responsiveness</h4>
+                <p>Quick support across all communication channels.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- 3×3 GRID -->
+    <section class="services-wrapper">
+
+        <div class="">
+
+            <div class="row ">
+                <div class="col-12 text-center aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1200">
+                    <h2 class="custom-heading">
+                        We Put You First - When It Comes to Your
+                        <span class="gradient-text">Brand Growth, Privacy & Accessibility</span>
+                    </h2>
+
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <!-- CARDS 1–9 -->
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">01</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">Competitive Price</h6>
+                            <p class="card-desc">
+                                Get started with affordable and reliable payment solutions. EzyPayment brings all your
+                                financial tools together, making it easy to manage payments, track transactions, and
+                                grow your business effortlessly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">02</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Instant Settlement</h6>
+                            <p class="card-desc">
+                                Never let delayed payments slow down your business. EzyPayment offers instant settlement
+                                so you receive your funds immediately—enhancing cash flow, improving operational
+                                efficiency, and enabling faster decision-making.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">03</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Virtual Account</h6>
+                            <p class="card-desc">
+                                Virtual Accounts allow you to accept payments securely and efficiently. Customers pay
+                                without accessing your bank details, giving you enhanced protection and smoother
+                                financial workflows.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">04</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Fast</h6>
+                            <p class="card-desc">
+                                With rapid technological advancement, your payment experience must keep pace. EzyPayment
+                                gives you a smart, fast, and frictionless way to manage all your transactions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">05</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                UPI Settlement</h6>
+                            <p class="card-desc">
+                                Make instant payments or receive funds seamlessly with zero convenience fees when using
+                                UPI
+                                through EzyPayment. Fast, secure, and hassle-free transactions every time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">06</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                PCI DSS Compliant</h6>
+                            <p class="card-desc">
+                                EzyPayment strictly follows PCI DSS security standards to safeguard sensitive customer
+                                information, including card details, ensuring fraud prevention and building trust with
+                                every transaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">07</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Instant Refunds</h6>
+                            <p class="card-desc">
+                                EzyPayment enables fast, transparent, and hassle-free refunds, enhancing customer
+                                satisfaction and loyalty while streamlining your business operations. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">08</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Dashboard & Analytics</h6>
+                            <p class="card-desc">
+
+                                EzyPayment provides a comprehensive dashboard to track all your transactions, visualize
+                                key metrics, and make informed business decisions effortlessly. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-4" data-aos="flip-left" data-aos-duration="2000">
+                    <div class="info-card d-flex align-items-start">
+                        <div class="badge-circle me-3">09</div>
+
+                        <div class="card-text-box">
+                            <h6 class="fw-bold">
+                                Productivity</h6>
+                            <p class="card-desc">
+
+                                EzyPayment helps you boost productivity with a streamlined and easy-to-use payment
+                                management system, designed to save time and optimize your business operations. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FAQ Section Pricing -->
+    <section class="faq-section">
+
+        <h2 class="faq-title" data-aos="fade-up" data-aos-duration="800">
+            Frequently Asked <span>Questions</span>
+        </h2>
+
+        <div class="faq-container">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="700">
+                <button class="faq-question">What is included in the pricing?</button>
+                <div class="faq-answer">
+                    <p>Our pricing includes setup, KYC verification, dashboard access, and complete support with no
+                        hidden charges.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="800">
+                <button class="faq-question">Do you offer instant settlements?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can enable on-demand instant settlements and receive funds within minutes.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="900">
+                <button class="faq-question">Is there any long-term contract?</button>
+                <div class="faq-answer">
+                    <p>No, there are no lock-ins. You can switch plans or cancel anytime without penalties.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
+                <button class="faq-question">Are the transactions secure?</button>
+                <div class="faq-answer">
+                    <p>We follow industry-grade security including SSL/TLS, PCI-DSS compliance, encryption, and fraud
+                        detection.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1100">
+                <button class="faq-question">Do you support no-code integrations?</button>
+                <div class="faq-answer">
+                    <p>Yes, you can integrate using API, plugins, or no-code builders like Shopify, WordPress, and
+                        Webflow.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
+                <button class="faq-question">How do I contact support?</button>
+                <div class="faq-answer">
+                    <p>You can reach our support team anytime through chat, email, or the contact page.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                // Close all other FAQs
+                faqItems.forEach(i => {
+                    if (i !== item) i.classList.remove('active');
+                });
+
+                // Toggle current one
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+    <div include-html="/eazypayements/pages/layout/footer.html"></div>
+
+
+    <script src="../../pages/script/include.js"></script>
+    <script src="../../pages/script/mobile-header.js"></script>
+
+
+
+
+</body>
+
+</html>
