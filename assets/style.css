@@ -14,6 +14,7 @@
   --gradient-dark: linear-gradient(135deg, #027a02, #31cb31);
   --border: #d2edd3;
   --gradient-button-hover: linear-gradient(90deg, #31cb31, #039902);
+  --gradient-text: linear-gradient(90deg, #36ba36, #026f00);
 }
 
 /* Base */
@@ -24,7 +25,10 @@
 body *:not(i) {
   font-family: 'Sora', sans-serif;
 }
-
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 /* ==========================
    GLOBAL PAGE CONTAINER PADDING
    Applies to all sections & inner pages
@@ -143,6 +147,16 @@ body *:not(i) {
   background: var(--primary);
 }
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
 /* actions: login + hamburger */
 .actions {
@@ -412,12 +426,30 @@ a.active::after {
 
 .hero-text {
   width: 50%;
+  padding-top: 30px;
 }
 
-.hero-text h2 {
-  font-size: 35px;
-  color: var(--primary);
+.hero-text h1 {
+  font-size: 38px;
+  color: var(--text);
   margin-bottom: 15px;
+  /* font-size: 66px; */
+  font-weight: 600 !important;
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+
+.hero-text.display-4 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 32px;
+  }
 }
 
 .hero-box {
@@ -897,7 +929,7 @@ select:focus {
   padding: 12px 20px;
   /* Even padding for equal height */
   height: 40px;
-  /* Fixed height for uniform look */
+  /* Fixed height for uniform lobring-sectionok */
 
   display: flex;
   /* Center text horizontally & vertically */
@@ -913,6 +945,7 @@ select:focus {
   cursor: pointer;
   margin-top: 10px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .login-btn:hover {
@@ -1337,7 +1370,7 @@ body {
 
 /* About Us */
 .gradient-text {
-  background: linear-gradient(93.38deg, #31cb31 11.99%, #039902 56.11%);
+  background: linear-gradient(93.38deg, #41ab41 11.99%, #039902 56.11%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -1518,12 +1551,6 @@ body {
   margin-bottom: 0;
   max-width: 700px;
   /* optional: limit width for readability */
-}
-
-.gradient-text {
-  background: var(--gradient-dark);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* Responsive */
@@ -2057,7 +2084,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #039902, #026f00);
+  background: linear-gradient(90deg, #36ba36, #026f00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2072,12 +2099,30 @@ body {
 }
 
 .hero-btn {
-  background: var(--gradient-dark);
-  padding: 12px 28px;
-  border-radius: 30px;
-  color: #fff;
+  width: 100%;
+  /* Full width button */
+  max-width: 200px;
+  /* Set fixed width (optional) */
+
+  padding: 12px 20px;
+  /* Even padding for equal height */
+  height: 40px;
+  /* Fixed height for uniform look */
+
+  display: flex;
+  /* Center text horizontally & vertically */
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  font-size: 14px;
+  border: none;
+  color: white;
+  background: linear-gradient(90deg, #2fa92f, #027a02);
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-decoration: none;
-  font-weight: 600;
 }
 
 .hero-btn:hover {
@@ -2567,15 +2612,27 @@ ul {
 
 /* Trust Lable */
 .trust-label {
-  display: flex;
-  justify-content: center;
-  word-spacing: 2;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.3;
 }
+
+.trust-label span {
+  display: block;
+  margin-top: 5px;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
 
 .t-label {
   display: flex;
   justify-content: center;
-  color: var(--primary);
+  color: var(--gradient-dark);
 
 }
 
@@ -2612,10 +2669,10 @@ ul {
 
 .logo-img {
   height: 50px;
-  width: auto;
+  
   object-fit: contain;
   transition: 0.3s;
-  margin-top: 30px;
+  margin-top: 0px;
 
 }
 
@@ -2652,6 +2709,7 @@ ul {
   /* ensures padding is included in width */
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 10%;
 
 }
 
@@ -2659,12 +2717,15 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
+
   /* make h1 and p at extremes */
 }
 
 .bring-section h1 {
-  color: var(--primary);
-  font-size: 35px;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
   font-weight: 700;
   margin: 0;
 }
@@ -2702,21 +2763,21 @@ ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* make h1 and p at extremes */
+  padding-left: 8%;
 }
 
 .compliance-section h1 {
-  color: var(--primary);
-  font-size: 35px;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
   font-weight: 700;
   margin: 0;
 }
 
 .compliance-section p {
   margin: 0;
-  /* remove default margins */
   max-width: 45%;
-  /* optional: control width so they don't wrap too soon */
   font-size: 20px;
   filter: grayscale(100%);
   opacity: 0.5;
@@ -2725,13 +2786,14 @@ ul {
 
 .compliance-section span {
   margin: 0;
-  /* remove default margins */
   max-width: 45%;
-  /* optional: control width so they don't wrap too soon */
   font-size: 20px;
-  filter: grayscale(100%);
-  opacity: 0.5;
+  opacity: 0.9;
   text-justify: auto;
+
+  -webkit-text-fill-color: initial;
+  /* restores text visibility */
+  color: var(--text);
 }
 
 /* FEATURE CARDS */
@@ -2758,7 +2820,10 @@ ul {
 }
 
 .feature-card h2 span {
-  color: var(--primary);
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
   /* Purple like screenshot */
 }
 
@@ -2799,12 +2864,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #068c06, #04a204, #8dec96);
+  background: linear-gradient(90deg, #068c06, #53ba53, #8dec96);
   padding: 30px;
   border-radius: 40px;
   color: white;
   gap: 40px;
-  margin: 60px;
+  margin-right: 10%;
+  margin-left: 10%;
   padding-right: 0;
   /* 🟣 Remove right padding */
   padding-top: 0;
@@ -2918,7 +2984,9 @@ ul {
 }
 
 .endorse-content span {
-  color: var(--primary);
+  background: var(--gradient-text);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* MAIN IMAGE */
@@ -3294,7 +3362,7 @@ Pricing Page CSS
 }
 
 .pricing-left h1 span {
-  color: var(--primary);
+  color: var(--gradient-text);
 }
 
 .pricing-left p {
@@ -3304,7 +3372,7 @@ Pricing Page CSS
 }
 
 /* RIGHT */
-.pricing-right {
+/* .pricing-right {
   background: var(--primary);
   padding: 30px;
   border-radius: 18px;
@@ -3324,7 +3392,93 @@ Pricing Page CSS
   line-height: 1.3;
   font-weight: 700;
   color: white;
+} */
+
+/* RIGHT CARD */
+.pricing-right {
+  background: var(--gradient-text);
+  padding: 40px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  color: white;
+  overflow: hidden;
 }
+
+/* Contact Icon – Top Right */
+.pricing-right .contact-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pricing-right .contact-icon i {
+    font-size: 22px;
+    color: #ffffff !important;  
+}
+
+
+
+/* Sub text */
+.pricing-right .sub {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  /* color: #f5f3ff; */
+}
+
+/* Heading */
+.pricing-right h2 {
+  font-size: 35px;
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+  color: #ffffff;
+}
+
+/* CTA Button */
+.pricing-right .cta-btn {
+  display: inline-block;
+  background: white;
+  color: var(--primary);
+  font-size: 17px;
+  padding: 14px 22px;
+  border-radius: 28px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.pricing-right .cta-btn:hover {
+  transform: translateY(-3px);
+  background: #f7f3ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pricing-right {
+    padding: 28px;
+  }
+
+  .pricing-right h2 {
+    font-size: 30px;
+  }
+
+  .pricing-right .cta-btn {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+}
+
 
 .cta-btn {
   display: inline-block;
@@ -3573,7 +3727,6 @@ Pricing Page CSS
     font-size: 12px;
   }
 }
-
 /*  pricing Features*/
 .pricing-features-section {
   margin: 0 auto;
@@ -3584,22 +3737,39 @@ Pricing Page CSS
   text-align: center;
   padding: 40px 20px;
   background: #f4f2fa25;
-  /* light purple tint */
 }
 
-.pricing-feature-card img {
-  width: 70px;
-  margin-bottom: 20px;
+/* CARD UI UPDATE */
+.pricing-feature-card {
+  padding: 25px 20px;
+  border: 1px solid #fcfbfb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.pricing-feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* SVG icon */
+.pricing-feature-card svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  stroke: var(--primary) !important; 
 }
 
 .pricing-feature-card h3 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .pricing-feature-card p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
   line-height: 1.5;
   max-width: 350px;
@@ -3615,7 +3785,7 @@ Pricing Page CSS
   }
 
   .pricing-feature-card h3 {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .pricing-feature-card p {
@@ -3629,12 +3799,12 @@ Pricing Page CSS
     gap: 30px;
   }
 
-  .pricing-feature-card img {
-    width: 60px;
+  .pricing-feature-card svg {
+    width: 55px;
   }
 
   .pricing-feature-card h3 {
-    font-size: 17px;
+    font-size: 13px;
   }
 
   .pricing-feature-card p {
@@ -3649,12 +3819,12 @@ Pricing Page CSS
     gap: 25px;
   }
 
-  .pricing-feature-card img {
+  .pricing-feature-card svg {
     width: 50px;
   }
 
   .pricing-feature-card h3 {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .pricing-feature-card p {
@@ -3664,126 +3834,137 @@ Pricing Page CSS
 
 
 /* Pricing Call-us Section */
-
 .call-us-section {
-  width: 70%;
-  margin: 0 auto;
+  width: 65%;
+  margin: 0 auto 60px auto;
   padding: 0;
-  /* No extra padding outside */
-  background: var(--primary);
-  position: relative;
+  background:var(--gradient-text);
   border-radius: 30px;
   text-align: center;
-  /* Center all text */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-us-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
 }
 
 .call-us-section .card-container {
   max-width: 650px;
   margin: 0 auto;
-  padding: 40px 20px;
-  /* Reduced top & bottom padding */
+  padding: 55px 25px;
   position: relative;
   z-index: 2;
+  backdrop-filter: blur(6px);
 }
 
 .call-us-section h4 {
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin-bottom: 15px;
-  padding: 0;
-  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 12px;
   color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
 .call-us-section h4 span {
   font-weight: 700;
+  color: #fffbea;
 }
 
 .call-us-section p {
-  font-size: 17px;
-  margin-bottom: 15px;
-  line-height: 1.4;
-  color: #f0f0f0;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f3f3f3;
+  opacity: 0.9;
 }
 
 .call-us-section button {
   font-size: 18px;
-  border-radius: 25px;
+  border-radius: 30px;
+  padding: 14px 26px;
   display: inline-flex;
   align-items: center;
-  padding: 12px 20px;
-  color: black;
+  gap: 8px;
   border: none !important;
-  outline: none !important;
+  background: #ffffff;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.call-us-section button:hover {
+  transform: scale(1.07);
+  background: #fff8dc;
 }
 
 .call-us-section button img {
   width: 22px;
   height: 22px;
-  filter: brightness(0) invert(0);
-  /* forces black */
-  display: block;
-
+  filter: brightness(0);
 }
 
-/* Remove unwanted dash / highlight from Bootstrap button */
-.call-us-section .btn-light {
-  box-shadow: none !important;
-  border: none !important;
-}
-
-/* Remove any possible pseudo-element */
+/* Remove unwanted bootstrap styles */
+.call-us-section .btn-light,
 .call-us-section .btn-light::after,
 .call-us-section .btn-light::before {
+  box-shadow: none !important;
+  border: none !important;
   content: none !important;
-  display: none !important;
 }
 
-
-
-
-
-/* MAP Image */
-.call-us-section .map-img {
-  width: 70%;
-  max-width: 420px;
-  opacity: 0.35;
-  pointer-events: none;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+/* Subtle background decorative shape */
+.call-us-section::before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  top: -60px;
+  right: -60px;
+  filter: blur(20px);
 }
 
-/* ---------- Mobile Responsive ---------- */
+.call-us-section::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  bottom: -50px;
+  left: -50px;
+  filter: blur(18px);
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .call-us-section {
-    width: 95%;
+    width: 92%;
     border-radius: 20px;
   }
 
   .call-us-section .card-container {
-    padding: 30px 15px;
-    /* Smaller top/bottom padding on mobile */
+    padding: 40px 18px;
   }
 
   .call-us-section h4 {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   .call-us-section p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .call-us-section button {
     font-size: 16px;
-    padding: 10px 18px;
-  }
-
-  .call-us-section .map-img {
-    width: 85%;
+    padding: 12px 20px;
   }
 }
+
 
 /* FAQ Pricing */
 
@@ -4543,19 +4724,8 @@ select:focus {
   }
 }
 
-/* Trust Lable */
-.trust-label {
-  display: flex;
-  justify-content: center;
-  word-spacing: 2;
-}
 
-.t-label {
-  display: flex;
-  justify-content: center;
-  color: var(--primary);
 
-}
 
 /* Client Logo Section  */
 
@@ -4614,47 +4784,65 @@ select:focus {
   }
 }
 
-/* KYC Cards SEction */
-
-
-/* Bring Section  */
-.bring-section {
-  display: flex;
-  justify-content: space-between;
-  /* space between the h1 and p */
-  align-items: center;
-  /* vertically center the items */
-  padding: 20px 50px;
-  /* 20px top/bottom, 50px left/right */
-  width: 100%;
-  box-sizing: border-box;
-  /* ensures padding is included in width */
-  margin-top: 30px;
-  margin-bottom: 30px;
-
+.privacy-wrapper {
+  padding: 60px 20px;
 }
 
-.bring-section .bring- {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  /* make h1 and p at extremes */
+.privacy-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.bring-section h1 {
-  color: var(--primary);
-  font-size: 35px;
+.title {
+  text-align: center;
+  font-size: 36px;
   font-weight: 700;
-  margin: 0;
+  background: linear-gradient(90deg, #039902, #027a02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.bring-section p {
-  margin: 0;
-  /* remove default margins */
-  max-width: 45%;
-  /* optional: control width so they don't wrap too soon */
-  font-size: 20px;
-  filter: grayscale(100%);
-  opacity: 0.5;
-  text-justify: auto;
+.date {
+  text-align: center;
+  margin: 15px 0 25px;
+  font-size: 16px;
+}
+
+.intro {
+  margin-bottom: 25px;
+  font-size: 17px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #039902;
+}
+
+ul {
+  margin: 15px 0;
+  padding-left: 22px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+p {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
 }
