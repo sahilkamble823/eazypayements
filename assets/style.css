@@ -83,7 +83,7 @@ body *:not(i) {
 
 /* logo */
 .logo-img {
-  width: 100px;
+  width: auto;
   height: 50px;
   transform-origin: center;
   transition: transform .45s cubic-bezier(.2, .9, .2, 1);
@@ -499,7 +499,7 @@ a.active::after {
 }
 
 .feature-card {
-  width: 30%;
+  width: auto;
   background: white;
   padding: 25px;
   border-radius: 20px;
@@ -509,6 +509,39 @@ a.active::after {
 .feature-card h3 {
   color: var(--primary);
   margin-bottom: 10px;
+}
+
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    /* stack cards vertically */
+    align-items: center;
+    /* center cards */
+    padding: 20px 10px;
+  }
+
+  .feature-card {
+    flex: 1 1 100%;
+    /* full width on mobile */
+    margin-bottom: 20px;
+    /* spacing between stacked cards */
+  }
+
+  .feature-card h2 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 15px;
+  }
+
+  .feature-card .feature-img img {
+    width: 80%;
+    /* make image responsive on mobile */
+    height: auto;
+  }
 }
 
 /* Footer Area */
@@ -835,7 +868,7 @@ input:focus {
 /* LEFT SECTION */
 .left {
   width: 50%;
-  background: linear-gradient(120deg, #039902, #027a02);
+  background: var(--gradient-button-hover);
   position: relative;
 }
 
@@ -1050,8 +1083,10 @@ select:focus {
 
 /* Right side phone mockup */
 .hero-image img {
-  width: 430px;
+  width: 300px;
   animation: floatPhone 4s ease-in-out infinite;
+  padding-top: 20px;
+  height: 400px;
 }
 
 @keyframes floatPhone {
@@ -1065,6 +1100,43 @@ select:focus {
 
   100% {
     transform: translateY(0px);
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    /* stack text and image */
+    text-align: center;
+    padding: 0 20px;
+    /* equal left/right padding */
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+    /* smaller heading */
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .hero-image img {
+    width: 80%;
+    /* responsive image */
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .hero-btn {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 15px;
   }
 }
 
@@ -1141,20 +1213,17 @@ body {
 .contact-container {
   display: flex;
   align-items: stretch;
+  padding-right: 20px;
   gap: 2px;
 }
 
-/* LEFT IMAGE (no space) */
 .left-img {
-  flex: 1;
-  display: flex;
-  min-height: 50%;
-  height: 70%;
-  align-items: end;
-  justify-content: end;
-  padding: 0;
-  margin-left: 25%;
-  margin-right: 50%;
+  width: 100%;         /* image scales to container width */
+  max-width: 300px;    /* adjust for your layout */
+  height: auto;        /* maintain aspect ratio */
+  display: block;      /* ensures block-level behavior */
+  margin: 0 auto;   
+  padding-right: 20px;   /* center horizontally */
 }
 
 
@@ -1165,7 +1234,8 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-
+  padding: 20px; /* add inner padding */
+  gap: 20px;     /* spacing between info-boxes */
 }
 
 
@@ -2626,6 +2696,7 @@ ul {
   font-size: 35px;
   font-weight: 700;
   line-height: 1.3;
+  padding-top: 20px;
 }
 
 .trust-label span {
@@ -2677,14 +2748,14 @@ ul {
 }
 
 
-.logo-img {
+/* .logo-img {
   height: 50px;
 
   object-fit: contain;
   transition: 0.3s;
   margin-top: 0px;
 
-}
+} */
 
 .logo-img:hover {
   transform: scale(1.1);
@@ -2751,6 +2822,37 @@ ul {
   text-justify: auto;
 }
 
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .bring-section .bring- {
+    flex-direction: column;
+    /* Stack items */
+    text-align: center;
+    /* Center text */
+    padding: 0 20px;
+    /* Equal left-right padding */
+  }
+
+  .bring-section h1 {
+    font-size: 28px;
+    /* Smaller heading for mobile */
+    margin-bottom: 15px;
+    /* Space between h1 and text */
+    background: var(--gradient-text);
+    /* Example green gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bring-section p {
+    max-width: 100%;
+    /* Full width paragraph */
+    font-size: 16px;
+    opacity: 0.7;
+    text-align: justify;
+  }
+}
+
 
 /* Compliance Section  */
 .compliance-section {
@@ -2806,6 +2908,47 @@ ul {
   color: var(--text);
 }
 
+
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .compliance-section .compliance- {
+    flex-direction: column;
+    /* stack heading & paragraph */
+    text-align: center;
+    /* center content */
+    padding: 0 20px;
+    /* equal left-right padding */
+  }
+
+  .compliance-section h1 {
+    font-size: 28px;
+    /* smaller heading for mobile */
+    margin-bottom: 15px;
+    background: var(--gradient-button-hover);
+    /* keep gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.3;
+  }
+
+  .compliance-section h1 span {
+    /* force each span on a new line */
+    margin-bottom: 10px;
+    /* spacing between the lines */
+  }
+
+  .compliance-section p {
+    max-width: 100%;
+    /* full width paragraph */
+    font-size: 16px;
+    margin-top: 15px;
+    /* space below heading */
+    opacity: 0.8;
+    text-align: justify;
+  }
+}
+
 /* FEATURE CARDS */
 .features {
   display: flex;
@@ -2842,6 +2985,7 @@ ul {
   line-height: 1.6;
   color: #555;
   margin-top: 10px;
+  text-align: center;
 }
 
 .feature-img {
@@ -3094,6 +3238,7 @@ ul {
   -ms-overflow-style: none;
 
 
+
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -3121,6 +3266,8 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.7;
+  padding-top: 20px;
 }
 
 /* Overlay Content */
@@ -3549,12 +3696,12 @@ Pricing Page CSS
 
 .highlight-text {
   margin-top: 15px;
-  background: #f5f8ff;
+  background: #f7fff5;
   padding: 15px 20px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #e0e7ff;
+  border: 1px solid #e4ffe0;
 }
 
 .span-tick {
@@ -4144,7 +4291,7 @@ Pricing Page CSS
 .product-right img {
   width: 500px;
   /* increase width slightly */
-  height: 260px;
+  height: 500px;
   /* set fixed taller height */
   object-fit: contain;
   display: block;
@@ -4218,14 +4365,14 @@ Pricing Page CSS
 /* LEFT */
 .analysis-left img {
   width: 450px;
-  height: auto;
+  height: 500px;
   object-fit: contain;
   filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
 }
 
 /* RIGHT */
 .analysis-right h1 {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 1.3;
   font-weight: 700;
   color: #1f1f1f;
@@ -4274,8 +4421,10 @@ Pricing Page CSS
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 22px; /* Increased for perfect balance */
-  line-height: 1; /* Ensures emoji stays centered */
+  font-size: 22px;
+  /* Increased for perfect balance */
+  line-height: 1;
+  /* Ensures emoji stays centered */
 }
 
 
@@ -4288,6 +4437,14 @@ Pricing Page CSS
 
   .analysis-left img {
     width: 320px;
+  }
+  .product-right img {
+    width: 320px;
+
+  }
+  .login-btn{
+    margin-top: 10px;
+    align-items: center;
   }
 
   .features-grid {
@@ -4311,7 +4468,7 @@ Pricing Page CSS
 }
 
 .industry-header h2 {
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
   color: #000;
   line-height: 1.3;
