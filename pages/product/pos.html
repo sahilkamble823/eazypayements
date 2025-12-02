@@ -8,113 +8,112 @@
     <link rel="stylesheet" href="../../assets/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER -->
    <header class="header" role="banner">
-    <div class="nav-container">
-      <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home" data-aos="fade-top" data-aos-delay="100">
-        <!-- dummy logo (replace with real logo) -->
-        <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
-      </a>
+        <div class="nav-container">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home" data-aos="fade-top"
+                data-aos-delay="100">
+                <!-- dummy logo (replace with real logo) -->
+                <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+            </a>
 
-      <nav class="nav-links" role="navigation" aria-label="Primary">
-        <a href="/eazypayements/index.html" class="nav-item" data-aos="fade-down" data-aos-delay="200">Home</a>
+            <nav class="nav-links" role="navigation" aria-label="Primary">
+                <a href="/eazypayements/index.html" class="nav-item" data-aos="fade-down" data-aos-delay="200">Home</a>
 
-        <div class="dropdown" id="productsDropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-aos="fade-down" data-aos-delay="200">
-            Products <span class="caret">▾</span>
-          </button>
+                <div class="dropdown" id="productsDropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-aos="fade-down"
+                        data-aos-delay="200">
+                        Products <span class="caret">▾</span>
+                    </button>
 
-          <div class="dropdown-content" role="menu" aria-hidden="true">
-            <div class="cards-grid">
-              <!-- Card 1 -->
-              <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
-                </div>
-                <div class="card-text" data-aos="fade-down" data-aos-delay="300">
-                  <strong>Payment Gateway</strong>
-                  <p>Accept all payments via any method with seamless API integration.</p>
-                </div>
-              </a>
+                    <div class="dropdown-content" role="menu" aria-hidden="true">
+                        <div class="cards-grid">
+                            <!-- Card 1 -->
+                            <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card"
+                                role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                </div>
+                                <div class="card-text" data-aos="fade-down" data-aos-delay="300">
+                                    <strong>Payment Gateway</strong>
+                                    <p>Accept all payments via any method with seamless API integration.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 2 -->
-              <a href="../product/fees.html" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/rupeeicon.png" alt="fees icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Fees</strong>
-                  <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
-                </div>
-              </a>
+                            <!-- Card 2 -->
+                            <a href="/eazypayements/pages/product/fees.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/rupeeicon.png" alt="fees icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Ezypayment soundbox
+                                    </strong>
+                                    <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 3 -->
-              <a href="/payout" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/payout.png" alt="payout icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Payout</strong>
-                  <p>Schedule auto payouts to anyone for any purpose at any time.</p>
-                </div>
-              </a>
+                            <!-- Card 3 -->
+                            <a href="/eazypayements/pages/product/payout.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/payout.png" alt="payout icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payout</strong>
+                                    <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 4 -->
-              <a href="/pos" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/credit-card.png" alt="pos icon" />
-                </div>
-                <div class="card-text">
-                  <strong>POS</strong>
-                  <p>Accept all in-person payments from all digital methods effortlessly.</p>
-                </div>
-              </a>
+                            <!-- Card 4 -->
+                            <a href="/eazypayements/pages/product/pos.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-card.png" alt="pos icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>POS</strong>
+                                    <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 5 -->
-              <a href="/smart-billing" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/bill.png" alt="sb icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Smart Billing</strong>
-                  <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
-                </div>
-              </a>
+                            <!-- Card 5 -->
+                            <a href="/eazypayements/pages/product/smart-billing.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/bill.png" alt="sb icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>UPI stack</strong>
+                                    <p>Advanced UPI Merchant Integration Stack</p>
+                                </div>
+                            </a>
+                        </div> <!-- .cards-grid -->
+                    </div> <!-- .dropdown-content -->
+                </div> <!-- .dropdown -->
 
-              <!-- Card 6 -->
-              <a href="/teller" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/teller.png" alt="teller icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Teller</strong>
-                  <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
-                </div>
-              </a>
-            </div> <!-- .cards-grid -->
-          </div> <!-- .dropdown-content -->
-        </div> <!-- .dropdown -->
+                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="400">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="500">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="600">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="700">Contact</a>
+            </nav>
 
-        <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item" data-aos="fade-down" data-aos-delay="400">Pricing</a>
-        <a href="/eazypayements/pages/services/service.html" class="nav-item" data-aos="fade-down" data-aos-delay="500">Services</a>
-        <a href="/eazypayements/pages/about/about-us.html" class="nav-item" data-aos="fade-down" data-aos-delay="600">About</a>
-        <a href="/eazypayements/pages/contact/contact.html" class="nav-item"data-aos="fade-down" data-aos-delay="700">Contact</a>
-      </nav>
+            <div class="actions">
+                <a class="login-btn" data-aos="fade-down" data-aos-delay="9 00"
+                    href="/eazypayements/pages/login.html">Login →</a>
 
-      <div class="actions">
-        <a class="login-btn" data-aos="fade-down" data-aos-delay="9 00" href="/eazypayements/pages/login.html">Login →</a>
-
-        <!-- hamburger for small screens -->
-        <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
+                <!-- hamburger for small screens -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
     <!-- Pricing Hero Section  -->
     <section class="product-hero">
         <div class="product-container">
@@ -312,83 +311,91 @@
     <br /><br />
 
     <!-- FAQ Section Pricing -->
-    <section class="faq-section">
-        <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
-        <h4>
-            Still have some doubts? We have got you covered by answering all your
-            common questions.
-        </h4>
+     <section class="faq-section">
+
+        <h2 class="faq-title" data-aos="fade-up" data-aos-duration="800">
+            Frequently Asked <span>Questions</span>
+        </h2>
 
         <div class="faq-container">
+
             <!-- FAQ 1 -->
-            <div class="faq-item">
-                <button class="faq-question">What is included in the pricing?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="700">
+                <button class="faq-question">1. What is a POS Machine?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        Our pricing includes setup, KYC verification, dashboard access,
-                        and complete support with no hidden charges.
+                    <p>A POS device allows businesses to accept Card, UPI, Tap-and-Pay, and QR payments.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 2 -->
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you offer instant settlements?
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="800">
+                <button class="faq-question">2. What types of cards are supported?
                 </button>
                 <div class="faq-answer">
-                    <p>
-                        Yes, you can enable on-demand instant settlements and receive
-                        funds within minutes.
+                    <p>Visa, MasterCard, Rupay, Amex.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 3 -->
-            <div class="faq-item">
-                <button class="faq-question">Is there any long-term contract?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="900">
+                <button class="faq-question">
+3. Does POS support Tap & Pay?
+
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        No, there are no lock-ins. You can switch plans or cancel anytime
-                        without penalties.
+                    <p>Yes, NFC-enabled support is available.
                     </p>
+                   
                 </div>
             </div>
 
             <!-- FAQ 4 -->
-            <div class="faq-item">
-                <button class="faq-question">Are the transactions secure?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
+                <button class="faq-question">
+             4. Rental or purchase option?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        We follow industry-grade security including SSL/TLS, PCI-DSS
-                        compliance, encryption, and fraud detection.
+                    <p>Both available.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 5 -->
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you support no-code integrations?
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1100">
+                <button class="faq-question">5. What is settlement duration?
                 </button>
                 <div class="faq-answer">
-                    <p>
-                        Yes, you can integrate using API, plugins, or no-code builders
-                        like Shopify, WordPress, and Webflow.
+                    <p>T+1 default, faster available.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 6 -->
-            <div class="faq-item">
-                <button class="faq-question">How do I contact support?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
+                <button class="faq-question">6.Can I view POS transactions online?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        You can reach our support team anytime through chat, email, or the
-                        contact page.
+                    <p>Yes, via dashboard.
                     </p>
                 </div>
             </div>
+            <!-- FAQ 7 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1300">
+                <button class="faq-question">7. Do you provide warranty & support?
+
+                </button>
+                <div class="faq-answer">
+                    <p>
+                     Yes, with 24×7 support.
+                    </p>
+                    
+                </div>
+            </div>
+           
+
         </div>
     </section>
     <br />

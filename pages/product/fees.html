@@ -4,393 +4,370 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fees</title>
+    <title>Ezypayment soundbox</title>
     <link rel="stylesheet" href="../../assets/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
     <!-- HEADER -->
-   <header class="header" role="banner">
-    <div class="nav-container">
-      <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home" data-aos="fade-top" data-aos-delay="100">
-        <!-- dummy logo (replace with real logo) -->
-        <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
-      </a>
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home" data-aos="fade-top"
+                data-aos-delay="100">
+                <!-- dummy logo (replace with real logo) -->
+                <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
+            </a>
 
-      <nav class="nav-links" role="navigation" aria-label="Primary">
-        <a href="/eazypayements/index.html" class="nav-item" data-aos="fade-down" data-aos-delay="200">Home</a>
+            <nav class="nav-links" role="navigation" aria-label="Primary">
+                <a href="/eazypayements/index.html" class="nav-item" data-aos="fade-down" data-aos-delay="200">Home</a>
 
-        <div class="dropdown" id="productsDropdown">
-          <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-aos="fade-down" data-aos-delay="200">
-            Products <span class="caret">▾</span>
-          </button>
+                <div class="dropdown" id="productsDropdown">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-aos="fade-down"
+                        data-aos-delay="200">
+                        Products <span class="caret">▾</span>
+                    </button>
 
-          <div class="dropdown-content" role="menu" aria-hidden="true">
-            <div class="cards-grid">
-              <!-- Card 1 -->
-              <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
-                </div>
-                <div class="card-text" data-aos="fade-down" data-aos-delay="300">
-                  <strong>Payment Gateway</strong>
-                  <p>Accept all payments via any method with seamless API integration.</p>
-                </div>
-              </a>
+                    <div class="dropdown-content" role="menu" aria-hidden="true">
+                        <div class="cards-grid">
+                            <!-- Card 1 -->
+                            <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card"
+                                role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                </div>
+                                <div class="card-text" data-aos="fade-down" data-aos-delay="300">
+                                    <strong>Payment Gateway</strong>
+                                    <p>Accept all payments via any method with seamless API integration.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 2 -->
-              <a href="../product/fees.html" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/rupeeicon.png" alt="fees icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Fees</strong>
-                  <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
-                </div>
-              </a>
+                            <!-- Card 2 -->
+                            <a href="/eazypayements/pages/product/fees.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/rupeeicon.png" alt="fees icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Ezypayment soundbox
+                                    </strong>
+                                    <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 3 -->
-              <a href="/payout" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/payout.png" alt="payout icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Payout</strong>
-                  <p>Schedule auto payouts to anyone for any purpose at any time.</p>
-                </div>
-              </a>
+                            <!-- Card 3 -->
+                            <a href="/eazypayements/pages/product/payout.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/payout.png" alt="payout icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>Payout</strong>
+                                    <p>Schedule auto payouts to anyone for any purpose at any time.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 4 -->
-              <a href="/pos" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/credit-card.png" alt="pos icon" />
-                </div>
-                <div class="card-text">
-                  <strong>POS</strong>
-                  <p>Accept all in-person payments from all digital methods effortlessly.</p>
-                </div>
-              </a>
+                            <!-- Card 4 -->
+                            <a href="/eazypayements/pages/product/pos.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/credit-card.png" alt="pos icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>POS</strong>
+                                    <p>Accept all in-person payments from all digital methods effortlessly.</p>
+                                </div>
+                            </a>
 
-              <!-- Card 5 -->
-              <a href="/smart-billing" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/bill.png" alt="sb icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Smart Billing</strong>
-                  <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
-                </div>
-              </a>
+                            <!-- Card 5 -->
+                            <a href="/eazypayements/pages/product/smart-billing.html" class="tab-card" role="menuitem">
+                                <div class="icon-circle">
+                                    <img src="../../assets/images/bill.png" alt="sb icon" />
+                                </div>
+                                <div class="card-text">
+                                    <strong>UPI stack</strong>
+                                    <p>Advanced UPI Merchant Integration Stack</p>
+                                </div>
+                            </a>
+                        </div> <!-- .cards-grid -->
+                    </div> <!-- .dropdown-content -->
+                </div> <!-- .dropdown -->
 
-              <!-- Card 6 -->
-              <a href="/teller" class="tab-card" role="menuitem">
-                <div class="icon-circle">
-                  <img src="assets/images/teller.png" alt="teller icon" />
-                </div>
-                <div class="card-text">
-                  <strong>Teller</strong>
-                  <p>Create invoice, collect payments, reconcile &amp; manage working capital via TReDs.</p>
-                </div>
-              </a>
-            </div> <!-- .cards-grid -->
-          </div> <!-- .dropdown-content -->
-        </div> <!-- .dropdown -->
+                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="400">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="500">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="600">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="700">Contact</a>
+            </nav>
 
-        <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item" data-aos="fade-down" data-aos-delay="400">Pricing</a>
-        <a href="/eazypayements/pages/services/service.html" class="nav-item" data-aos="fade-down" data-aos-delay="500">Services</a>
-        <a href="/eazypayements/pages/about/about-us.html" class="nav-item" data-aos="fade-down" data-aos-delay="600">About</a>
-        <a href="/eazypayements/pages/contact/contact.html" class="nav-item"data-aos="fade-down" data-aos-delay="700">Contact</a>
-      </nav>
+            <div class="actions">
+                <a class="login-btn" data-aos="fade-down" data-aos-delay="9 00"
+                    href="/eazypayements/pages/login.html">Login →</a>
 
-      <div class="actions">
-        <a class="login-btn" data-aos="fade-down" data-aos-delay="9 00" href="/eazypayements/pages/login.html">Login →</a>
-
-        <!-- hamburger for small screens -->
-        <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+                <!-- hamburger for small screens -->
+                <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
     <!-- Pricing Hero Section  -->
-    <section class="product-hero">
-        <div class="product-container">
-            <!-- LEFT SIDE -->
-            <div class="product-left">
-                <h1>
-                    Accept Online Payments<br />
-                    <span>with WPay's Payment Gateway</span>
-                </h1>
+ <!-- Product Hero Section - EZYPAYMENT SOUNDBOX -->
+<section class="product-hero">
+    <div class="product-container">
 
-                <p>
-                    Partner with a trusted payment gateway in India to drive your
-                    business growth. WPay enables you to accept payments through all
-                    available channels. It integrates into your existing system, whether
-                    it’s your mobile application or a website, for secure, quick, and
-                    efficient payments.
-                </p>
+        <!-- LEFT SIDE -->
+        <div class="product-left" data-aos="fade-right">
+            <h1>
+                Meet the <br />
+                <span>Ezypayment Soundbox</span>
+            </h1>
 
-                <button class="signup-btn">SignUp Now</button>
-            </div>
+            <p>
+                Experience instant voice alerts for every UPI payment.  
+                Ezypayment Soundbox helps merchants stay updated with  
+                real-time payment confirmations—loud, clear, and secure.
+            </p>
 
-            <!-- RIGHT SIDE -->
-            <div class="product-right">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/banner/banner-img.svg"
-                    alt="product hero image" />
+            <p>
+                Stay focused on your customers while our smart soundbox  
+                announces every successful transaction.
+            </p>
+
+            <button class="login-btn">Get Your Soundbox</button>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div class="product-right" data-aos="fade-left">
+            <img src="../../assets/images/soundbox.png" 
+                 alt="Ezypayment Soundbox" />
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Detail Section 2 -->
+<section class="analysis-section">
+    <div class="analysis-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="analysis-left">
+            <img src="/eazypayements/assets/images/soundbox-analysis.png"
+                alt="Ezypayment Soundbox Analysis" />
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="analysis-right">
+            <h1>
+                Understand Payments Better With<br />
+                <span>Smart Soundbox Insights</span>
+            </h1>
+
+            <p>
+                Ezypayment Soundbox delivers instant voice alerts for every UPI
+                transaction, ensuring you never miss a payment—even during rush hours.
+                Our intelligent system helps you manage collections with complete clarity.
+            </p>
+
+            <p>
+                With secure technology, real-time tracking, and seamless connectivity,
+                Soundbox becomes more than a speaker—it's your business's smart
+                payment companion.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="features-grid">
+
+                <div class="feature-product-card">
+                    <div class="icon purple">🔊</div>
+                    <p>Instant voice confirmation for every UPI payment.</p>
+                </div>
+
+                <div class="feature-product-card">
+                    <div class="icon purple">🔒</div>
+                    <p>Secure & encrypted—keeps each transaction fully protected.</p>
+                </div>
+
+                <div class="feature-product-card">
+                    <div class="icon purple">📱</div>
+                    <p>Smart dashboard to track payments anytime, anywhere.</p>
+                </div>
+
+                <div class="feature-product-card">
+                    <div class="icon purple">⚡</div>
+                    <p>Reliable uptime & smooth performance for busy stores.</p>
+                </div>
+
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Detail Section 2 -->
-    <section class="analysis-section">
-        <div class="analysis-container">
-            <!-- LEFT IMAGE -->
-            <div class="analysis-left">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-2/image.svg"
-                    alt="Analytics Mockup" />
-            </div>
-
-            <!-- RIGHT CONTENT -->
-            <div class="analysis-right">
-                <h1>
-                    Drive Your Business Growth With<br />
-                    <span>In-Depth Analysis</span>
-                </h1>
-
-                <p>
-                    Our comprehensive dashboard offers valuable data analytics and
-                    reporting capabilities, enabling your business to optimize payment
-                    processes and enhance the customer experience.
-                </p>
-
-                <p>
-                    Additionally, Wonderpay offers features beyond basic transaction
-                    processing, including advanced security measures and integration
-                    with other business systems.
-                </p>
-
-                <!-- FEATURES -->
-                <div class="features-grid">
-                    <div class="feature-product-card">
-                        <div class="icon purple">📊</div>
-                        <p>Get Valuable Insights.</p>
-                    </div>
-
-                    <div class="feature-product-card">
-                        <div class="icon purple">📈</div>
-                        <p>We scale as your business grows.</p>
-                    </div>
-
-                    <div class="feature-product-card">
-                        <div class="icon purple">🎨</div>
-                        <p>Customize to fit your needs.</p>
-                    </div>
-
-                    <div class="feature-product-card">
-                        <div class="icon purple">🛡️</div>
-                        <p>Big No to fraud and data breaches.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scroll Section -->
-    <section class="scroll-feature-section">
-        <div class="scroll-feature-wrapper">
-
-            <!-- LEFT IMAGES -->
-            <div class="scroll-scroll-feature-images">
-                <div class="img-slide"><img src="img1.png" /></div>
-                <div class="img-slide"><img src="img2.png" /></div>
-                <div class="img-slide"><img src="img3.png" /></div>
-                <div class="img-slide"><img src="img4.png" /></div>
-            </div>
-
-            <!-- RIGHT CONTENT -->
-            <div class="scroll-feature-content">
-                <div class="text-slide">
-                    <h2>Feature One</h2>
-                    <p>This is description for slide one.</p>
-                </div>
-                <div class="text-slide">
-                    <h2>Feature Two</h2>
-                    <p>This is description for slide two.</p>
-                </div>
-                <div class="text-slide">
-                    <h2>Feature Three</h2>
-                    <p>This is description for slide three.</p>
-                </div>
-                <div class="text-slide">
-                    <h2>Feature Four</h2>
-                    <p>This is description for slide four.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
     <!-- Industries Section  -->
+<section class="industry-section">
+    <div class="industry-header">
+        <h2>Built for Every Business.<br /><span>Powered by the Ezypayment Soundbox.</span></h2>
+    </div>
 
-    <section class="industry-section">
-        <div class="industry-header">
-            <h2>Customizable By Design.<br /><span>Scalable By Nature.</span></h2>
+    <div class="industry-grid">
+
+        <!-- CARD 1 -->
+        <div class="industry-card">
+            <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/e-commerce.svg" alt="" />
+            <h3>E-COMMERCE</h3>
+            <p>
+                Receive instant voice alerts for every online order payment and ensure faster order processing.
+            </p>
         </div>
 
-        <div class="industry-grid">
-            <!-- CARD 1 -->
-            <div class="industry-card">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/e-commerce.svg"
-                    alt="" />
-                <h3>E-COMMERCE</h3>
-                <p>
-                    Streamline your online and in-person transactions, expand your
-                    market reach, and enhance security.
-                </p>
-            </div>
-
-            <!-- CARD 2 -->
-            <div class="industry-card">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/retailer.svg"
-                    alt="" />
-                <h3>RETAIL</h3>
-                <p>
-                    Accept in-store and online payments, manage inventory, and promote
-                    customer loyalty programs.
-                </p>
-            </div>
-
-            <!-- CARD 3 -->
-            <div class="industry-card">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/subscription.svg"
-                    alt="" />
-                <h3>SUBSCRIPTIONS</h3>
-                <p>
-                    Manage all subscriptions from healthcare to OTT via our automated
-                    PayIn collection methods.
-                </p>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="industry-card">
-                <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/travel.svg" alt="" />
-                <h3>TRAVEL & TOURISM</h3>
-                <p>
-                    Hassle-free payments for online booking, reservations, & payment
-                    processing for travel operators.
-                </p>
-            </div>
+        <!-- CARD 2 -->
+        <div class="industry-card">
+            <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/retailer.svg" alt="" />
+            <h3>RETAIL STORES</h3>
+            <p>
+                Get loud, real-time UPI payment confirmations at your counter to avoid confusion and speed up billing.
+            </p>
         </div>
-    </section>
 
-    <!-- CTA Call Us Section -->
-    <section class="call-us-section">
-        <div class="card-container text-center position-relative text-white" data-astro-cid-lmkygsfs="">
-            <h4 class="display-4 font-weight-500" data-astro-cid-lmkygsfs="">
-                Boost Your Business Cash Flow - Endorse Your Revenue!<br data-astro-cid-lmkygsfs="" />
-                <span class="font-weight-600" data-astro-cid-lmkygsfs="">Start Now!</span>
-            </h4>
-            <!-- <p data-astro-cid-lmkygsfs="">
-          No lock‑in, transparent pricing <br data-astro-cid-lmkygsfs="" />
-          Switch plans anytime as you scale
-        </p> -->
-            <br />
-            <a href="/contact-us" data-astro-cid-lmkygsfs="">
-                <button type="button" class="btn btn-light py-3 px-4 mt-4 font-weight-500 position-relative"
-                    data-astro-cid-lmkygsfs="">
-                    <img src="/assets/website-assets/common-images/contact-us-btn-icon.svg" class="me-1" alt=""
-                        data-astro-cid-lmkygsfs="" />Sign Up Now
-                </button>
-            </a>
+        <!-- CARD 3 -->
+        <div class="industry-card">
+            <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/subscription.svg" alt="" />
+            <h3>SERVICE SUBSCRIPTIONS</h3>
+            <p>
+                Automate recurring payments with instant audio alerts so you never miss a subscription renewal.
+            </p>
         </div>
-    </section>
+
+        <!-- CARD 4 -->
+        <div class="industry-card">
+            <img src="https://wonderpaytec.com/assets/website-assets/payment-gateway/section-6/travel.svg" alt="" />
+            <h3>TRAVEL & TOURISM</h3>
+            <p>
+                Accept quick UPI payments for bookings, tours, and reservations — with instant audible verification.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Call Us Section -->
+<section class="call-us-section">
+    <div class="card-container text-center position-relative text-white" data-astro-cid-lmkygsfs="">
+        <h4 class="display-4 font-weight-500" data-astro-cid-lmkygsfs="">
+            Boost Your Business with Real-Time Payment Alerts<br data-astro-cid-lmkygsfs="" />
+            <span class="font-weight-600" data-astro-cid-lmkygsfs="">Get Your Ezypayment Soundbox Today!</span>
+        </h4>
+
+        <br />
+
+        <a href="../signup.html" data-astro-cid-lmkygsfs="">
+            <button type="button" class="btn btn-light py-3 px-4 mt-4 font-weight-500 position-relative"
+                data-astro-cid-lmkygsfs="">
+                <img src="/assets/website-assets/common-images/contact-us-btn-icon.svg" class="me-1" alt=""
+                    data-astro-cid-lmkygsfs="" />
+                Sign Up Now
+            </button>
+        </a>
+    </div>
+</section>
+
 
     <!-- FAQ Section Pricing -->
     <br /><br />
 
     <!-- FAQ Section Pricing -->
-    <section class="faq-section">
-        <h2 class="faq-title">Frequently Asked <span>Questions</span></h2>
-        <h4>
-            Still have some doubts? We have got you covered by answering all your
-            common questions.
-        </h4>
+     <section class="faq-section">
+
+        <h2 class="faq-title" data-aos="fade-up" data-aos-duration="800">
+            Frequently Asked <span>Questions</span>
+        </h2>
 
         <div class="faq-container">
+
             <!-- FAQ 1 -->
-            <div class="faq-item">
-                <button class="faq-question">What is included in the pricing?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="700">
+                <button class="faq-question">1. What is the Ezypayment Soundbox?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        Our pricing includes setup, KYC verification, dashboard access,
-                        and complete support with no hidden charges.
+                    <p>The Soundbox is a smart device that announces UPI payment confirmations instantly with voice alerts.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 2 -->
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you offer instant settlements?
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="800">
+                <button class="faq-question">2. How does it work?
                 </button>
                 <div class="faq-answer">
-                    <p>
-                        Yes, you can enable on-demand instant settlements and receive
-                        funds within minutes.
+                    <p>When customers pay via UPI, the Soundbox plays a voice notification confirming the payment amount.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 3 -->
-            <div class="faq-item">
-                <button class="faq-question">Is there any long-term contract?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="900">
+                <button class="faq-question">
+3. What languages are supported?
+
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        No, there are no lock-ins. You can switch plans or cancel anytime
-                        without penalties.
+                    <p>Hindi, English, and multiple regional languages.
                     </p>
+                   
                 </div>
             </div>
 
             <!-- FAQ 4 -->
-            <div class="faq-item">
-                <button class="faq-question">Are the transactions secure?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
+                <button class="faq-question">
+              4. Does it need internet?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        We follow industry-grade security including SSL/TLS, PCI-DSS
-                        compliance, encryption, and fraud detection.
+                    <p>Yes, it works through SIM / WiFi connectivity.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 5 -->
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you support no-code integrations?
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1100">
+                <button class="faq-question">5. What is the battery backup?
                 </button>
                 <div class="faq-answer">
-                    <p>
-                        Yes, you can integrate using API, plugins, or no-code builders
-                        like Shopify, WordPress, and Webflow.
+                    <p>8–12 hours depending on model.
                     </p>
                 </div>
             </div>
 
             <!-- FAQ 6 -->
-            <div class="faq-item">
-                <button class="faq-question">How do I contact support?</button>
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
+                <button class="faq-question">6. Can I track transactions?
+                </button>
                 <div class="faq-answer">
-                    <p>
-                        You can reach our support team anytime through chat, email, or the
-                        contact page.
+                    <p>Yes, all payments can be viewed on the merchant dashboard.
                     </p>
                 </div>
             </div>
+            <!-- FAQ 7 -->
+            <div class="faq-item" data-aos="fade-up" data-aos-duration="1200">
+                <button class="faq-question">7. Is there any monthly rental?
+
+                </button>
+                <div class="faq-answer">
+                    <p>
+                       Yes, depending on plan.
+                    </p>
+                    
+                </div>
+            </div>
+           
+
         </div>
     </section>
+
     <br />
 
     <!-- FOOTER -->
@@ -472,6 +449,10 @@
                 item.classList.toggle("active");
             });
         });
+    </script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 

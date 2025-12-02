@@ -6,24 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refund Policy</title>
     <link rel="stylesheet" href="../../assets/style.css">
+ 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
+
+
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="header" role="banner">
+  <header class="header" role="banner">
         <div class="nav-container">
-            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home">
+            <a href="/eazypayements/index.html" class="logo-area" aria-label="Ezypayment home" data-aos="fade-top"
+                data-aos-delay="100">
                 <!-- dummy logo (replace with real logo) -->
                 <img src="/eazypayements/assets/images/ezyPaymentLogo.png" class="logo-img" alt="EZYPAYMENT logo" />
             </a>
 
             <nav class="nav-links" role="navigation" aria-label="Primary">
-                <a href="/eazypayements/index.html" class="nav-item">Home</a>
+                <a href="/eazypayements/index.html" class="nav-item" data-aos="fade-down" data-aos-delay="200">Home</a>
 
                 <div class="dropdown" id="productsDropdown">
-                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                    <button class="dropbtn" aria-haspopup="true" aria-expanded="false" data-aos="fade-down"
+                        data-aos-delay="200">
                         Products <span class="caret">▾</span>
                     </button>
 
@@ -33,29 +43,30 @@
                             <a href="/eazypayements/pages/product/payment-gateway.html" class="tab-card"
                                 role="menuitem">
                                 <div class="icon-circle">
-                                    <img src="assets/images/credit-cartsIcon.png" alt="pg icon" />
+                                    <img src="../../assets/images/credit-cartsIcon.png" alt="pg icon" />
                                 </div>
-                                <div class="card-text">
+                                <div class="card-text" data-aos="fade-down" data-aos-delay="300">
                                     <strong>Payment Gateway</strong>
                                     <p>Accept all payments via any method with seamless API integration.</p>
                                 </div>
                             </a>
 
                             <!-- Card 2 -->
-                            <a href="/fees" class="tab-card" role="menuitem">
+                            <a href="/eazypayements/pages/product/fees.html" class="tab-card" role="menuitem">
                                 <div class="icon-circle">
-                                    <img src="assets/images/rupeeicon.png" alt="fees icon" />
+                                    <img src="../../assets/images/rupeeicon.png" alt="fees icon" />
                                 </div>
                                 <div class="card-text">
-                                    <strong>Fees</strong>
+                                    <strong>Ezypayment soundbox
+                                    </strong>
                                     <p>Collect each fee installment-wise &amp; reconcile in real time.</p>
                                 </div>
                             </a>
 
                             <!-- Card 3 -->
-                            <a href="/payout" class="tab-card" role="menuitem">
+                            <a href="/eazypayements/pages/product/payout.html" class="tab-card" role="menuitem">
                                 <div class="icon-circle">
-                                    <img src="assets/images/payout.png" alt="payout icon" />
+                                    <img src="../../assets/images/payout.png" alt="payout icon" />
                                 </div>
                                 <div class="card-text">
                                     <strong>Payout</strong>
@@ -64,9 +75,9 @@
                             </a>
 
                             <!-- Card 4 -->
-                            <a href="/pos" class="tab-card" role="menuitem">
+                            <a href="/eazypayements/pages/product/pos.html" class="tab-card" role="menuitem">
                                 <div class="icon-circle">
-                                    <img src="assets/images/credit-card.png" alt="pos icon" />
+                                    <img src="../../assets/images/credit-card.png" alt="pos icon" />
                                 </div>
                                 <div class="card-text">
                                     <strong>POS</strong>
@@ -75,39 +86,32 @@
                             </a>
 
                             <!-- Card 5 -->
-                            <a href="/smart-billing" class="tab-card" role="menuitem">
+                            <a href="/eazypayements/pages/product/smart-billing.html" class="tab-card" role="menuitem">
                                 <div class="icon-circle">
-                                    <img src="assets/images/bill.png" alt="sb icon" />
+                                    <img src="../../assets/images/bill.png" alt="sb icon" />
                                 </div>
                                 <div class="card-text">
-                                    <strong>Smart Billing</strong>
-                                    <p>GST-compliant invoices, auto recurring collections, with E-nach.</p>
-                                </div>
-                            </a>
-
-                            <!-- Card 6 -->
-                            <a href="/teller" class="tab-card" role="menuitem">
-                                <div class="icon-circle">
-                                    <img src="assets/images/teller.png" alt="teller icon" />
-                                </div>
-                                <div class="card-text">
-                                    <strong>Teller</strong>
-                                    <p>Create invoice, collect payments, reconcile &amp; manage working capital via
-                                        TReDs.</p>
+                                    <strong>UPI stack</strong>
+                                    <p>Advanced UPI Merchant Integration Stack</p>
                                 </div>
                             </a>
                         </div> <!-- .cards-grid -->
                     </div> <!-- .dropdown-content -->
                 </div> <!-- .dropdown -->
 
-                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item">Pricing</a>
-                <a href="/eazypayements/pages/services/service.html" class="nav-item">Services</a>
-                <a href="/eazypayements/pages/about/about-us.html" class="nav-item">About</a>
-                <a href="/eazypayements/pages/contact/contact.html" class="nav-item">Contact</a>
+                <a href="/eazypayements/pages/pricing/pricing.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="400">Pricing</a>
+                <a href="/eazypayements/pages/services/service.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="500">Services</a>
+                <a href="/eazypayements/pages/about/about-us.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="600">About</a>
+                <a href="/eazypayements/pages/contact/contact.html" class="nav-item" data-aos="fade-down"
+                    data-aos-delay="700">Contact</a>
             </nav>
 
             <div class="actions">
-                <a class="login-btn" href="/eazypayements/pages/login.html">Login →</a>
+                <a class="login-btn" data-aos="fade-down" data-aos-delay="9 00"
+                    href="/eazypayements/pages/login.html">Login →</a>
 
                 <!-- hamburger for small screens -->
                 <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
@@ -120,7 +124,9 @@
     <!-- Refund Policy Section -->
     <!-- Refund Policy Section -->
     <section class="refund-section">
-        <h1 class="title">REFUND POLICY</h1>
+       <h1 class="page-title">
+                <span class="gradient-text">Refund</span>
+            </h1>
         <h2 class="sub-title">EzyPayment – Refunds, Failed Payments & Chargebacks</h2>
 
         <p class="update-date">Last Updated: 30 November 2025</p>
