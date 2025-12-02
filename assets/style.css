@@ -1538,9 +1538,10 @@ body {
 
 .about-section {
   width: 100%;
-  padding: 60px 100px;
+  /* padding: 60px 100px; */
   text-align: center;
   background: #f9f9fb;
+  padding-top: 50px;
 }
 
 .about-header h1 {
@@ -1869,7 +1870,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   margin-top: 15px;
-  text-align: end;
+  text-align: justify;
   margin-left: 10%;
 }
 
@@ -2047,7 +2048,7 @@ body {
 }
 
 .bg-layer {
-  background: url(../assets/images/bg-card-img.svg) no-repeat center center;
+  background: url(../assets/images/corevalues.jpg) no-repeat center center;
   background-size: cover;
   border-radius: 30px;
   height: 200px;
@@ -4303,6 +4304,7 @@ Pricing Page CSS
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding-top: 30px;
   gap: 40px;
 }
 
