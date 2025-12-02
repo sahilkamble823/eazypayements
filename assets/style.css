@@ -4292,8 +4292,9 @@ Pricing Page CSS
 
 
 .product-hero {
-  padding: 60px 20px;
+
   background: #fff;
+  padding-top: 20px;
 }
 
 .product-container {
@@ -4358,8 +4359,6 @@ Pricing Page CSS
 /* RIGHT */
 .product-right img {
   width: 500px;
-  /* increase width slightly */
-  height: 500px;
   /* set fixed taller height */
   object-fit: contain;
   display: block;
@@ -4413,12 +4412,130 @@ Pricing Page CSS
   }
 }
 
+/* ============================
+   MOBILE RESPONSIVE (UP TO 768px)
+   ============================ */
+@media (max-width: 768px) {
+
+    /* ---------- PRODUCT HERO SECTION ---------- */
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .product-left h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .product-left span {
+        font-size: 30px;
+    }
+
+    .product-left p {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .product-right img {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .login-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+
+    /* ---------- ANALYSIS SECTION ---------- */
+    .analysis-container {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .analysis-left img {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .analysis-right h1 {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 20px;
+    }
+
+    .analysis-right p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .feature-product-card {
+        justify-content: center;
+        padding: 14px;
+    }
+
+    .feature-product-card p {
+        font-size: 14px;
+    }
+
+
+    /* ---------- INDUSTRIES SECTION ---------- */
+    .industry-header h2 {
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .industry-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .industry-card {
+        text-align: center;
+        padding: 18px;
+    }
+
+    .industry-card img {
+        width: 70px;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .industry-card h3 {
+        font-size: 18px;
+        margin: 10px 0 6px;
+    }
+
+    .industry-card p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+
 /* product Detail section 2 */
 
 .analysis-section {
   background: var(--green-back);
   /* very light green tint */
-  padding: 80px 20px;
+  padding: 0px 20px;
 }
 
 .analysis-container {
@@ -4433,7 +4550,7 @@ Pricing Page CSS
 /* LEFT */
 .analysis-left img {
   width: 450px;
-  height: 500px;
+  height: auto;
   object-fit: contain;
   filter: drop-shadow(0px 8px 24px rgba(0, 0, 0, 0.08));
 }
@@ -4507,10 +4624,6 @@ Pricing Page CSS
     width: 320px;
   }
 
-  .product-right img {
-    width: 320px;
-
-  }
 
   .login-btn {
     margin-top: 10px;
