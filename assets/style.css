@@ -2326,6 +2326,7 @@ body {
 .custom-heading {
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 50px;
   font-size: 32px;
   font-weight: 700;
   text-align: center;
@@ -4813,7 +4814,7 @@ Pricing Page CSS
 /* LEFT SECTION */
 .left {
   width: 50%;
-  background: url("/eazypayements/assets/images/customer.jpg") center/cover no-repeat;
+  background: url("../assets/images/customer.jpg") center/cover no-repeat;
   position: relative;
 }
 
