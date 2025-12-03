@@ -5218,3 +5218,23 @@ strong {
   opacity: 1;
   transform: translateZ(0);
 }
+
+@media (max-width: 768px) {
+  .left-content {
+    top: 40px;
+    /* padding from top */
+    bottom: 40px;
+    /* padding from bottom */
+    position: relative;
+    /* needed to apply spacing properly */
+    padding: 40px 20px;
+    /* extra internal padding */
+  }
+
+  .left {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 !important;
+    /* top + bottom padding on the whole left */
+  }
+}
